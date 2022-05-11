@@ -58,3 +58,18 @@
   #f2{
       background-color: var(--backgroundPrimario) !important;
   }
+  .dropdown-menu{
+      background-color: var(--backgroundPrimario) !important;
+  }
+  .dropdown-menu li{
+      background-color: var(--backgroundPrimario) !important;
+  }
+  .dropdown-menu li a{
+      background-color: transparent !important;
+  }
+  .dropdown-menu li:hover{
+      background-color: var(--backgroundOpcional) !important;
+  }
+  .dropdown-item{
+      color: var(--colorTerciario) !important;
+  }
