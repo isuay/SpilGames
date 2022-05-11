@@ -12,7 +12,11 @@
 
 #slider-principal, .carousel-item img{
     margin: 0 auto;
-    height: 58vh !important;
+    height: 65vh !important;
+}
+
+#texto-medio{
+    bottom: 16.25rem;
 }
 
 ul li a{

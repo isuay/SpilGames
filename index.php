@@ -14,9 +14,9 @@
     <!-- Presentacion de diapositivas -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/slider/FondoPerfecto.jpg" alt="Bienvenida" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-                <h3>¡BIENVENIDOS A SPIL GAME, LA MEJOR PAGINA DE JUEGOS DE CARTAS!</h3>
+            <img src="img/slider/fotoPrincipal2.jpg" alt="Bienvenida" class="d-block" style="width:100%">
+            <div id="texto-medio" class="carousel-caption">
+                <h3>¡BIENVENIDOS A SPIL GAMES, LA MEJOR PÁGINA DE JUEGOS DE CARTAS!</h3>
             </div>
         </div>
         <div class="carousel-item ">
@@ -28,13 +28,13 @@
         <div class="carousel-item">
             <img src="img/slider/foto2.jpg" alt="Chicago" class="d-block" style="width:100%">
             <div class="carousel-caption">
-                <h3>Spider Solitaire</h3>
+                <h3>SPIDER SOLITAIRE</h3>
             </div>
         </div>
         <div class="carousel-item">
             <img src="img/slider/foto3.jpg" alt="New York" class="d-block" style="width:100%">
             <div class="carousel-caption">
-                <h3>Memory Game</h3>
+                <h3>MEMORY GAME</h3>
             </div>
         </div>
     </div>
