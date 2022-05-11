@@ -3,7 +3,7 @@
 }
 
 #logo-footer {
-    width: 80%;
+    width: 35%;
 }
 
 #menu-links {
@@ -12,6 +12,10 @@
 
 ul li a{
     font-size: 25px;
+}
+
+ul li img{
+    width: 30px;
 }
 
 
