@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="d-flex flex-wrap justify-content-between py-3 border-bottom ">
+    <header class="d-flex flex-wrap justify-content-between py-3">
         <img id="logo-web" src="img/logos/logo.png" alt="Logo">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container" id="main_nav">
