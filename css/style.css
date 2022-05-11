@@ -1,0 +1,42 @@
+#logo-web {
+    width: 12%;
+}
+
+#logo-footer {
+    width: 35%;
+}
+
+#menu-links {
+    align-items: center;
+}
+
+#slider-principal{
+    max-width: 1200px !important;
+}
+
+ul li a{
+    font-size: 25px;
+}
+
+ul li img{
+    width: 30px;
+}
+
+
+.navbar .nav-item .dropdown-menu {
+    display: none;
+}
+
+.navbar .nav-item:hover .nav-link {}
+
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
