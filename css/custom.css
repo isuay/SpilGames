@@ -52,3 +52,9 @@
   header{
       background-color: var(--backgroundPrimario) !important;
   }
+  #f1{
+      background-color: var(--backgroundOpcional) !important;
+  }
+  #f2{
+      background-color: var(--backgroundPrimario) !important;
+  }

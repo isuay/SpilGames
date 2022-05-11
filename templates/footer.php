@@ -1,6 +1,6 @@
 </body>
 
-<footer class="row row-cols-3 py-4 border-top text-center mx-5">
+<footer class="row row-cols-3 py-4 border-top text-center" id="f1">
     <div class="col">
         <img id="logo-footer" src="img/logos/logo.png" alt="Logo">
     </div>
@@ -22,7 +22,7 @@
     </div>
 </footer>
 
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top mx-5">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" id="f2">
     <div class="col-md-4 d-flex align-items-center">
         <span class="text-muted">&copy; 2021 Company, Inc</span>
     </div>
