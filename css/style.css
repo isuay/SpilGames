@@ -10,9 +10,9 @@
     align-items: center;
 }
 
-#slider-principal{
+#slider-principal, .carousel-item img{
     margin: 0 auto;
-    max-width: 1200px !important;
+    height: 58vh !important;
 }
 
 ul li a{
