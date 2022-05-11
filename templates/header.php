@@ -4,17 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Header</title>
+    <title>Inicio</title>
     <meta name="description" content="HTML5, CSS3">
     <meta name="author" content="">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-    <header class="d-flex flex-wrap justify-content-between py-3 mb-4 mx-5 border-bottom ">
+    <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom ">
         <img id="logo-web" src="img/logos/logo.png" alt="Logo">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container" id="main_nav">

@@ -1,0 +1,54 @@
+:root{
+    /*fuentes de google en variables*/
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    --fuenteTexto: 'Raleway', sans-serif;
+  
+    /*colores*/
+    --colorPrimario: #778DA9; 
+    --colorSecundario: #778DA9;
+    --colorTerciario: #E0E1DD;
+    --overlayColor: #8774E1E6;
+    --grisHover: #555;
+    --grisOscuro: #2F2E2E;
+    --grisMedio: #474545;
+    --grisClaro: #EBEBEB;
+    --grisEle: #f7f7f7;
+    --grisBor: #c6c6c6;
+    --blanco: #FFFFFF;
+    --blancoFondo: #F7F7F7;
+    --negro: #000000;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --yellow2: #f1e300;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --borderColor: rgba(53,55,64,0.2);
+    --background1: #E0E1DD;
+    --backgroundPrimario: #0D1B2A;
+    --backgroundOpcional: #1B263B;
+    --background2: #f1f0ec;
+    --background3: #FFFFFF; 
+    --background4: #3b3b3b;
+    --background5: #333;
+    --background6: #1D1D1D;
+  }
+
+  .nav-link{
+      color: var(--colorTerciario) !important;
+  }
+  .nav-link:hover{
+      color: var(--colorSecundario) !important;
+  }
+  header{
+      background-color: var(--backgroundPrimario) !important;
+  }
