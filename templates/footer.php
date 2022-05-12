@@ -22,7 +22,7 @@
     </div>
 </footer>
 
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 contenedor mx-auto" id="f2">
+<footer class="d-flex flex-wrap justify-content-around  align-items-center py-3 contenedor mx-auto" id="f2">
     <div class="col-md-4 d-flex align-items-center mx-auto text-left">
         <span class="text-muted">&copy; 2021 Company, Inc</span>
     </div>
