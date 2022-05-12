@@ -1,6 +1,10 @@
+@font-face {
+    font-family: 'Glacial-regular';
+    src: url(../fonts/GlacialIndifference-Regular.otf);
+}
 :root{
     /*fuentes de google en variables*/
-    --fuentePrincipal: 'Montserrat', sans-serif;
+    --fuentePrincipal: 'Glacial-regular', sans-serif;
     --fuenteTexto: 'Raleway', sans-serif;
   
     /*colores*/
@@ -43,6 +47,7 @@
     --background6: #1D1D1D;
   }
 
+
   .nav-link{
       color: var(--colorTerciario) !important;
   }
@@ -80,6 +85,9 @@
   }
 
   /*TITULOS*/
+  h1{
+      font-family: var(--fuentePrincipal);
+  }
   h5{
       color: var(--colorTerciario) !important;
   }
@@ -87,5 +95,6 @@
 
   /*UTILIDADES*/
   .text-upper{
+      font-family: var(--fuentePrincipal);
       text-transform: uppercase;
   }
