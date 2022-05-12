@@ -78,3 +78,14 @@
   .color-terciario{
       color: var(--colorTerciario);
   }
+
+  /*TITULOS*/
+  h5{
+      color: var(--colorTerciario) !important;
+  }
+
+
+  /*UTILIDADES*/
+  .text-upper{
+      text-transform: uppercase;
+  }
