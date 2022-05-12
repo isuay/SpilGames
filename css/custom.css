@@ -139,7 +139,7 @@ body{
 
   /*UTILIDADES*/
   .contenedor{
-      max-width: 1600px;
+      max-width: 1200px;
   }
   .text-upper{
       font-family: var(--fuentePrincipal);
