@@ -1,47 +1,40 @@
 #logo-web {
     width: 35%;
 }
-
 #menu-links {
     align-items: center;
 }
-
 #slider-principal, .carousel-item img{
     margin: 0 auto;
     height: 65vh !important;
 }
-
 #texto-medio{
     bottom: 16.25rem;
 }
-
 #alineacion-img{
     text-align: center;
 }
-
 ul li a{
     font-size: 25px;
 }
-
 ul li img{
     width: 30px;
 }
-
-
 .navbar .nav-item .dropdown-menu {
     display: none;
 }
+.navbar .nav-item:hover .nav-link {
 
-.navbar .nav-item:hover .nav-link {}
-
+}
 .navbar .nav-item:hover .dropdown-menu {
     display: block;
 }
-
 .navbar .nav-item .dropdown-menu {
     margin-top: 0;
 }
-
 .dropdown-toggle::after {
     display: none !important;
+}
+#f1 img{
+    width: 100%;
 }

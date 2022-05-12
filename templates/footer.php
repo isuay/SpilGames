@@ -1,11 +1,11 @@
 </body>
 
-<footer class="row row-cols-3 py-4 text-center border-bottom" id="f1">
-    <div class="col">
+<footer class="d-flex conenedor  justify-content-around row py-4 text-center border-bottom flex-wrap" id="f1">
+    <div class="col col-sm-1">
         <img id="logo-web" src="img/logos/logo.png" alt="Logo">
     </div>
 
-    <div class="col">
+    <div class="col col-sm-2">
         <h5 class="text-upper">Games</h5>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -13,7 +13,7 @@
         </ul>
     </div>
 
-    <div class="col">
+    <div class="col col-sm-1">
         <h5 class="text-upper">Contact</h5>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
