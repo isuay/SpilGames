@@ -2,6 +2,10 @@
     font-family: 'Glacial-regular';
     src: url(../fonts/GlacialIndifference-Regular.otf);
 }
+@font-face {
+    font-family: 'Furtura-regular';
+    src: url(../fonts/futur.ttf);
+}
 :root{
     /*fuentes de google en variables*/
     --fuentePrincipal: 'Glacial-regular', sans-serif;
@@ -89,8 +93,20 @@
   h1{
       font-family: var(--fuentePrincipal);
   }
+  h2{
+      font-family: var(--fuentePrincipal);
+  }
+  h3{
+      font-family: var(--fuentePrincipal);
+  }
+  h4{
+      font-family: var(--fuentePrincipal);
+  }
   h5{
       color: var(--colorTerciario) !important;
+  }
+  p{
+      font-family: var(--fuenteTexto) !important;
   }
 
 
