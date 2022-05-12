@@ -1,6 +1,6 @@
 </body>
 
-<footer class="row row-cols-3 py-4 border-top text-center" id="f1">
+<footer class="row row-cols-3 py-4 text-center" id="f1">
     <div class="col">
         <img id="logo-footer" src="img/logos/logo.png" alt="Logo">
     </div>
@@ -30,17 +30,17 @@
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-3">
             <a href="https://twitter.com/?lang=es" target="_blank">
-                <i class="fa-brands fa-twitter text-dark"></i>
+                <i class="fa-brands fa-twitter color-terciario"></i>
             </a>
         </li>
         <li class="ms-3">
             <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram text-dark"></i>
+                <i class="fa-brands fa-instagram color-terciario"></i>
             </a>
         </li>
         <li class="ms-3">
             <a href="https://es-es.facebook.com/" target="_blank">
-                <i class="fa-brands fa-facebook text-dark"></i>
+                <i class="fa-brands fa-facebook color-terciario"></i>
             </a>
         </li>
     </ul>

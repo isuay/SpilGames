@@ -54,6 +54,7 @@
   }
   #f1{
       background-color: var(--backgroundOpcional) !important;
+      margin: 0 !important;
   }
   #f2{
       background-color: var(--backgroundPrimario) !important;
@@ -72,4 +73,8 @@
   }
   .dropdown-item{
       color: var(--colorTerciario) !important;
+  }
+
+  .color-terciario{
+      color: var(--colorTerciario);
   }
