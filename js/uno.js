@@ -156,10 +156,10 @@ function getIDcarta(e){
     eliminarCarta(idCarta);
 }
 
-function eliminarCartaHTML(barajaHTML,id){
+function eliminarCartaHTML(id){
+    const barajaHTML = document.querySelectorAll('#cartas-jugador img');
     barajaHTML.forEach(carta => {
         if(carta.getAttribute('data-item' == id )){
-            console.log(carta);
             carta.remove();
         }
     });
@@ -176,7 +176,6 @@ function eliminarCartaMaquinaHTML(id){
 
 /*Eliminar carta*/
 function eliminarCarta(id) {
-    const listaCarta = document.querySelectorAll('#cartas-jugador img');
     /*carta del jugador*/
     let cartaJugador = getCarta(barajaJugador, id);
     /*carta que hay en la mesa*/
@@ -184,11 +183,10 @@ function eliminarCarta(id) {
     /*Comparar si son del mismo color o numero y añadirla a la mesa*/
     let comparacion = compararCartas(cartaMesa, cartaJugador);
     if (comparacion){
+        getCoords(cartaJugador.img);
         setCarta(barajaMesa, cartaJugador);
-        eliminarCartaMesa();
-        mostrarCarta(zonaJuego, cartaJugador);
         deleteCarta(barajaJugador, id)
-        eliminarCartaHTML(listaCarta,id);
+        setTimeout(j1Controls,1050);  
         setColorMesa();
         setTurno('0');
         sonidoCarta.play();
@@ -239,12 +237,12 @@ function descartarCartaMaquina() {
         let cartaMaquina = getCarta(barajaMaquina, listaCarta[i].getAttribute('data-item'));
         comparacion = compararCartas(cartaMesa, cartaMaquina);
         if (comparacion) {
+            getCoords(cartaMaquina.img2);
             let cartaID = cartaMaquina.id;
+            console.log(cartaMaquina);
             setCarta(barajaMesa, cartaMaquina);
             deleteCarta(barajaMaquina, cartaID);
-            eliminarCartaMaquinaHTML(cartaID);
-            eliminarCartaMesa();
-            mostrarCarta(zonaJuego, cartaMaquina);
+            setTimeout(j2Controls,1050);  
             setColorMesa();
             setTurno('1');
             sonidoCarta.play();
@@ -302,11 +300,13 @@ function añadirCarta(baraja) {
 function mostrarCarta(zona, carta) {
     img = carta.img;
     let idCarta = carta.id;
+    img.classList.add('carta'+idCarta);
     img.setAttribute('data-item',idCarta);
     zona.appendChild(img);
 }
 /*MOSTRAR BARAJA EN EL HTML*/
 function mostrarCartas(baraja, zona) {
+    limpiarHTML(zona);
         baraja.forEach(carta => {
             mostrarCarta(zona, carta);
         })
@@ -315,19 +315,23 @@ function mostrarCartas(baraja, zona) {
 function mostrarCartaMaquina(zona, carta){
     img = carta.img2;
     let idCarta = carta.id;
+    img.classList.add('carta'+idCarta, 'zi2');
     img.setAttribute('data-item',idCarta);
     zona.appendChild(img);
 }
 /*MOSTRAR BARAJA MAQUINA EN EL HTML*/
 function mostrarCartasMaquina(baraja, zona) {
+    limpiarHTML(zona);
     baraja.forEach(carta => {
         mostrarCartaMaquina(zona, carta)
     })
 }
 /*ELIMINA LA CARTA DE LA MESA*/
 function eliminarCartaMesa() {
-    const cartasMesa = document.querySelector('#cartas-mesa img');
-    cartasMesa.remove();
+    const cartasMesa = document.querySelector('#cartas-mesa');
+    while(cartasMesa.firstChild){
+        cartasMesa.removeChild(cartasMesa.firstChild);
+    }
 }
 
 /*MUESTRA LAS INSTRUCCIONES DEL JUEGO*/
@@ -425,7 +429,7 @@ function gestionTurnos() {
         turnoJugador1();
     } else if(getTurno() == '0') {
         console.log("Es el turno del jugador 2");
-        setTimeout(descartarCartaMaquina, 1500);
+        setTimeout(descartarCartaMaquina, 2000);
         secondClick = false;
     }
 }
@@ -434,6 +438,7 @@ function setColorMesa(){
     carta = getUltimaCarta(barajaMesa);
     colorMesa = carta.color;
 }
+
 /*Obtener color Mesa*/
 function getColorMesa(){
     return colorMesa;
@@ -461,6 +466,12 @@ function ganar(){
     }
 }
 
+function limpiarHTML(elemento){
+    while(elemento.firstChild){
+        elemento.removeChild(elemento.firstChild);
+    }
+}
+
 /*falta añadir funcion para seleccionar color de mesa (setColorMesa)*/
 /*Funcion para comparar color carta con color mesa*/
 /*añadir funcion de cartas comodin +2*/
@@ -468,4 +479,44 @@ function ganar(){
 /*añadir funcion de cartas comodin cambiar de color*/
 /*Mostrar por pantalla el turno actual + acciones jugador 2*/
 /* Mostrar FIN DEL JUEGO |GANADOR| PERDEDOR | */
+/*MOSTRAR BOTON DE QUITAR AUDIO*/
+/*ARREGLAR ANIMACIÓN DE LAS CARTAS MÁQUINA*/
 ////////////////////////////////////////////////////////////////////////*
+
+///////////////////// FUNCIONES V3 ANIMACIONES //////////////////////////
+
+function getCoords(elemento){
+    const cartaEnMesa = document.querySelector('#cartas-mesa');
+    let posicion = cartaEnMesa.getBoundingClientRect();
+
+    let pos = elemento.getBoundingClientRect();
+    let x = posicion.left - pos.left;
+    let y = posicion.top - pos.top;
+    console.log(x + " " +y);
+    animarCarta(elemento,x,y);
+}
+
+function animarCarta(elemento, x,y){
+    gsap.to(elemento,{
+        duration: 1,
+        x: x,
+        y: y,
+        ease: 'expo.out'
+    });
+}
+
+function j1Controls(){
+    let carta = getUltimaCarta(barajaMesa);
+    carta.img.style.removeProperty('transform');
+    eliminarCartaMesa();
+    mostrarCartas(barajaJugador, cartasJugador);
+    mostrarCarta(zonaJuego, carta);
+}
+
+function j2Controls(){
+    let carta = getUltimaCarta(barajaMesa);
+    carta.img2.style.removeProperty('transform');
+    eliminarCartaMesa();
+    mostrarCartasMaquina(barajaMaquina, cartasMaquina);
+    mostrarCarta(zonaJuego, carta);
+}
