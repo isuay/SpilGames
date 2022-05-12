@@ -1,5 +1,5 @@
 #logo-web {
-    width: 12%;
+    width: 30%;
 }
 
 #logo-footer {
@@ -17,6 +17,10 @@
 
 #texto-medio{
     bottom: 16.25rem;
+}
+
+#alineacion-img{
+    text-align: center;
 }
 
 ul li a{

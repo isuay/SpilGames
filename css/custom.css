@@ -56,6 +56,7 @@
   }
   header{
       background-color: var(--backgroundPrimario) !important;
+      margin: 0 !important;
   }
   #f1{
       background-color: var(--backgroundOpcional) !important;
