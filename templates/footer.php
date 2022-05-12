@@ -27,7 +27,6 @@
         <span class="text-muted">&copy; 2021 Company, Inc</span>
     </div>
 
-    <div class="d-flex">
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mx-auto">
             <li class="ms-3">
                 <a href="https://twitter.com/?lang=es" target="_blank">
@@ -45,7 +44,6 @@
                 </a>
             </li>
         </ul>
-    </div>
 </footer>
 
 </html>
