@@ -109,6 +109,13 @@
   .dropdown-item{
       color: var(--colorTerciario) !important;
   }
+  .offcanvas-end{
+      width: 240px !important;
+      background-color: #1B263B;
+  }
+  .btn-close{
+      background: transparent url("../img/logos/x2.png") center/1em auto no-repeat;
+  }
 
   .color-terciario{
       color: var(--colorTerciario);
