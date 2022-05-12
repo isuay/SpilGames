@@ -26,8 +26,10 @@
                             Games
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">FAQs</a></li>
-                            <li><a href="#" class="dropdown-item">About</a></li>
+                            <li><a href="#" class="dropdown-item">Solitaire</a></li>
+                            <li><a href="./uno.html" class="dropdown-item">uno</a></li>
+                            <li><a href="#" class="dropdown-item">memory</a></li>
+                            
                         </ul>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
