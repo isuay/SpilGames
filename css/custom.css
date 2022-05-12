@@ -17,8 +17,9 @@
 :root{
     /*fuentes de google en variables*/
     --fuentePrincipal: 'Poppins-regular', sans-serif;
-    --fuenteTexto: 'Raleway', sans-serif;
+    --fuenteTexto: 'Futura-regular', sans-serif;
     --fuenteSecundaria: 'Poppins-light', sans-serif;
+    --fuenteTerciaria: 'Poppins-medium', sans-serif;
   
     /*colores*/
     --colorPrimario: #778DA9; 
@@ -81,6 +82,14 @@
   #f1{
       background-color: var(--backgroundOpcional) !important;
       margin: 0 !important;
+  }
+  #f1 h5{
+      font-family: var(--fuenteTerciaria);
+      font-size: 1.5rem;
+  }
+  #f1 .nav-item a{
+      font-family: var(--fuenteSecundaria) !important;
+      font-size: 1.2rem;
   }
   #f2{
       background-color: var(--backgroundPrimario) !important;
