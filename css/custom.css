@@ -1,6 +1,14 @@
 @font-face {
-    font-family: 'Glacial-regular';
-    src: url(../fonts/GlacialIndifference-Regular.otf);
+    font-family: 'Poppins-regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-light';
+    src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url(../fonts/Poppins-Medium.ttf);
 }
 @font-face {
     font-family: 'Furtura-regular';
@@ -8,8 +16,9 @@
 }
 :root{
     /*fuentes de google en variables*/
-    --fuentePrincipal: 'Glacial-regular', sans-serif;
+    --fuentePrincipal: 'Poppins-regular', sans-serif;
     --fuenteTexto: 'Raleway', sans-serif;
+    --fuenteSecundaria: 'Poppins-light', sans-serif;
   
     /*colores*/
     --colorPrimario: #778DA9; 
@@ -58,6 +67,13 @@
   .nav-link:hover{
       color: var(--colorSecundario) !important;
   }
+  header .nav-item{
+      text-transform: uppercase;
+      font-family: var(--fuenteSecundaria) !important;
+  }
+  header .nav-item a{
+      font-size: 1.5rem;
+  }
   header{
       background-color: var(--backgroundPrimario) !important;
       margin: 0 !important;
@@ -91,16 +107,16 @@
 
   /*TITULOS*/
   h1{
-      font-family: var(--fuentePrincipal);
+      font-family: var(--fuentePrincipal) !important;
   }
   h2{
-      font-family: var(--fuentePrincipal);
+      font-family: var(--fuentePrincipal) !important;
   }
   h3{
-      font-family: var(--fuentePrincipal);
+      font-family: var(--fuentePrincipal) !important;
   }
   h4{
-      font-family: var(--fuentePrincipal);
+      font-family: var(--fuentePrincipal) !important;
   }
   h5{
       color: var(--colorTerciario) !important;
