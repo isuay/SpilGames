@@ -16,25 +16,34 @@
 </head>
 
 <body>
-    <header class="d-flex flex-wrap justify-content-between py-3">
-        <img id="logo-web" src="img/logos/logo.png" alt="Logo">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container" id="main_nav">
-                <ul class="nav nav-pills" id="menu-links">
-                    <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            Games
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">Solitaire</a></li>
-                            <li><a href="./uno.html" class="dropdown-item">uno</a></li>
-                            <li><a href="#" class="dropdown-item">memory</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
-                </ul>
-            </div>
-        </nav>
+    <header class="row row-cols-3 d-flex flex-wrap justify-content-between py-3">
+        <div id="alineacion-img" class="col">
+            <img id="logo-web" src="img/logos/logo.png" alt="Logo">
+        </div>
+        
+        <div class="col">
+            
+        </div>
+        <div class = "col">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container" id="main_nav">
+                    <ul class="nav nav-pills" id="menu-links">
+                        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                Games
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Solitaire</a></li>
+                                <li><a href="./uno.html" class="dropdown-item">uno</a></li>
+                                <li><a href="#" class="dropdown-item">memory</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
     </header>
