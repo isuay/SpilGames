@@ -2,7 +2,7 @@
 
 <footer class="row row-cols-3 py-4 text-center" id="f1">
     <div class="col">
-        <img id="logo-footer" src="img/logos/logo.png" alt="Logo">
+        <img id="logo-web" src="img/logos/logo.png" alt="Logo">
     </div>
 
     <div class="col">

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="row row-cols-3 d-flex flex-wrap justify-content-between py-3">
+    <header class="row row-cols-3 d-flex flex-wrap justify-content-between py-3 align-middle">
         <div id="alineacion-img" class="col">
             <img id="logo-web" src="img/logos/logo.png" alt="Logo">
         </div>
@@ -24,7 +24,7 @@
         <div class="col">
             
         </div>
-        <div class = "col">
+        <div class = "col d-flex">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container" id="main_nav">
                     <ul class="nav nav-pills" id="menu-links">
