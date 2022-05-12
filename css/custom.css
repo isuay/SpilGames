@@ -113,7 +113,9 @@
   .color-terciario{
       color: var(--colorTerciario);
   }
-
+body{
+    background-color: var(--backgroundPrimario);
+}
   /*TITULOS*/
   h1{
       font-family: var(--fuentePrincipal) !important;
@@ -136,7 +138,13 @@
 
 
   /*UTILIDADES*/
+  .contenedor{
+      max-width: 1200px;
+  }
   .text-upper{
       font-family: var(--fuentePrincipal);
       text-transform: uppercase;
+  }
+  .mx-auto{
+      margin: 0 auto;
   }
