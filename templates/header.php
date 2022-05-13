@@ -18,11 +18,11 @@
 <body>
     <header class="row d-flex flex-wrap justify-content-between py-3 align-middle contenedor mx-auto">
 
-        <div id="alineacion-img" class="col-4">
+        <div id="alineacion-img" class="col-md-4">
             <img id="logo-web" src="img/logos/logo.png" alt="Logo">
         </div>
             
-        <div class = "col-8 d-flex justify-content-end">
+        <div class = "col-md-8 d-flex justify-content-end">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container" id="main_nav">
                     <ul class="nav nav-pills" id="menu-links">
