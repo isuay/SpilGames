@@ -17,16 +17,17 @@
 
 <body>
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight">Toggle right offcanvas</button>
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i class="fa-regular fa-bars color-terciario"></i>
+    </button>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end d-flex" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <img id="logo-web" src="img/logos/logo.png" alt="Logo">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="nav nav-pills" id="menu-links">
+            <ul class="nav nav-pills" id="menu-offCanvas">
                 <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -95,17 +96,17 @@
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-3">
             <a href="https://twitter.com/?lang=es" target="_blank">
-                <i class="fa-brands fa-twitter text-dark"></i>
+                <i class="fa-brands fa-twitter color-terciario"></i>
             </a>
         </li>
         <li class="ms-3">
             <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram text-dark"></i>
+                <i class="fa-brands fa-instagram color-terciario"></i>
             </a>
         </li>
         <li class="ms-3">
             <a href="https://es-es.facebook.com/" target="_blank">
-                <i class="fa-brands fa-facebook text-dark"></i>
+                <i class="fa-brands fa-facebook color-terciario"></i>
             </a>
         </li>
     </ul>

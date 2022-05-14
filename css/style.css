@@ -4,6 +4,11 @@
 #menu-links {
     align-items: center;
 }
+#menu-offCanvas{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
 #slider-principal, .carousel-item img{
     margin: 0 auto;
     height: 65vh !important;
@@ -34,4 +39,10 @@ ul li img{
 }
 #f1 img{
     width: 100%;
+}
+#offcanvasRight{
+    width: 280px !important;
+}
+.offcanvas-header .btn-close{
+    margin-right: 0rem;
 }
