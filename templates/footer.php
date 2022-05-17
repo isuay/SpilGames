@@ -24,7 +24,7 @@
 
 <footer class="row d-flex flex-wrap justify-content-around contenedor align-items-center py-3 contenedor mx-auto" id="f2">
     <div class="col-sm-6 d-flex align-items-center justify-content-center">
-        <span class="text-muted">&copy; 2021 Company, Inc</span>
+        <span class="text-muted">&copy; 2022 Company, Inc</span>
     </div>
 
     <ul class="nav col-sm-6 justify-content-center list-unstyled d-flex">

@@ -46,3 +46,6 @@ ul li img{
 .offcanvas-header .btn-close{
     margin-right: 0rem;
 }
+#btn-offcanvas{
+    font-size: 2rem;
+}
