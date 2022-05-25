@@ -9,10 +9,12 @@
     align-items: center;
     align-content: center;
 }
+
 #slider-principal, .carousel-item img{
-    margin: 0 auto;
-    height: 65vh !important;
+    height:100% !important;
+    width: auto;
 }
+
 #texto-medio{
     bottom: 16.25rem;
 }

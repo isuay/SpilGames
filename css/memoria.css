@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B263B;
+}
+
+.tablero {
+    margin: 0 auto;
+    background-color: #8e7dbe;
+    width: 65%;
+    height: 256px;
+    border-radius: 10px;
+}
+
