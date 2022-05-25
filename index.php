@@ -14,7 +14,7 @@
     <!-- Presentacion de diapositivas -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/slider/fondoBueno.jpg" alt="Bienvenida" class="d-block">
+            <img src="img/slider/fondoBueno2.jpg" alt="Bienvenida" class="d-block">
             <div id="texto-medio" class="carousel-caption">
                 <h3>¡BIENVENIDOS A SPIL GAMES, LA MEJOR PÁGINA DE JUEGOS DE CARTAS!</h3>
             </div>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/slider/foto2.jpg" alt="Spider Solitaire" class="d-block">
+            <img src="img/slider/Solitario.png" alt="Spider Solitaire" class="d-block">
             <div class="carousel-caption">
                 <h3>SPIDER SOLITAIRE</h3>
             </div>
