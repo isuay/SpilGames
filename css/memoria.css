@@ -7,10 +7,15 @@ body {
 }
 
 .tablero {
-    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carta {
+    margin: 8px;
     background-color: #8e7dbe;
-    width: 65%;
-    height: 256px;
+    width: 115px;
+    height: 150px;
     border-radius: 10px;
 }
 
