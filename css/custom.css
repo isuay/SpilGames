@@ -92,7 +92,7 @@
       font-family: var(--fuenteSecundaria) !important;
   }
   header .nav-item a{
-      font-size: 1.5rem;
+      font-size: 2.2rem;
   }
   header{
       background-color: var(--backgroundPrimario) !important;
@@ -104,11 +104,11 @@
   }
   #f1 h5{
       font-family: var(--fuenteTerciaria);
-      font-size: 2.5rem;
+      font-size: 2.2rem;
   }
   #f1 .nav-item a{
       font-family: var(--fuenteSecundaria) !important;
-      font-size: 2rem;
+      font-size: 1.8rem;
   }
   @media screen and (max-width: 576px) {
     #f1 div{
@@ -116,13 +116,6 @@
     }
     #f2 div{
         margin-bottom: 2rem;
-    }
-    #f1 h5{
-        font-size: 2.6rem;
-    }
-    #f1 .nav-item a{
-        font-family: var(--fuenteSecundaria) !important;
-        font-size: 1.8rem;
     }
 }
 
