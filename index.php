@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/slider/Solitario.png" alt="Spider Solitaire" class="d-block">
+            <img src="img/slider/Solitario2.jpg" alt="Spider Solitaire" class="d-block">
             <div class="carousel-caption">
                 <h3>SPIDER SOLITAIRE</h3>
             </div>
