@@ -19,7 +19,7 @@
     <header class="row d-flex flex-wrap justify-content-between py-3 align-middle contenedor mx-auto">
 
         <div id="alineacion-img" class="col-md-4">
-            <img id="logo-web" src="img/logos/logo.png" alt="Logo">
+            <img id="logo-web" src="img/logos/logo_v1.png" alt="Logo">
         </div>
             
         <div class = "col-md-8 d-flex justify-content-end">

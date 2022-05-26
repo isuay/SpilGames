@@ -101,6 +101,7 @@
   #f1{
       background-color: var(--backgroundOpcional) !important;
       margin: 0 !important;
+      padding: 4rem 0 !important;
   }
   #f1 h5{
       font-family: var(--fuenteTerciaria);

@@ -2,7 +2,7 @@
 
 <footer class="d-flex row justify-content-around align-items-center py-4 text-center border-bottom flex-wrap" id="f1">
     <div class="col-sm-4">
-        <img id="logo-web" src="img/logos/logo.png" alt="Logo">
+        <img id="logo-web" src="img/logos/logo_v1.png" alt="Logo">
     </div>
 
     <div class="col-sm-4">
