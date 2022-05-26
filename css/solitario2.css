@@ -113,7 +113,7 @@ body {
 }
 
 img {
-    height: 100%;
+    height: 100px;
     width: auto;
 }
 
@@ -139,7 +139,3 @@ ul {
     grid-row-start: 1;
     grid-column-start: 1;
 }
-
-@media screen and (max-width: 600px) {
-    
-  }
