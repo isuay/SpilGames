@@ -19,20 +19,20 @@
                 <h3>¡BIENVENIDOS A SPIL GAMES, LA MEJOR PÁGINA DE JUEGOS DE CARTAS!</h3>
             </div>
         </div>
-        <div class="carousel-item ">
-            <img src="img/slider/foto1.jpg" alt="Uno" class="d-block">
-            <div class="carousel-caption">
-                <h3>UNO</h3>
-            </div>
-        </div>
         <div class="carousel-item">
             <img src="img/slider/Solitario2.jpg" alt="Spider Solitaire" class="d-block">
             <div class="carousel-caption">
                 <h3>SPIDER SOLITAIRE</h3>
             </div>
         </div>
+        <div class="carousel-item ">
+            <img src="img/slider/uno2.jpg" alt="Uno" class="d-block">
+            <div class="carousel-caption">
+                <h3>UNO</h3>
+            </div>
+        </div>
         <div class="carousel-item">
-            <img src="img/slider/foto3.jpg" alt="Memory game" class="d-block">
+            <img src="img/slider/memory.png" alt="Memory game" class="d-block">
             <div class="carousel-caption">
                 <h3>MEMORY GAME</h3>
             </div>

@@ -125,6 +125,7 @@
   }
   .dropdown-menu{
       background-color: var(--backgroundPrimario) !important;
+      transform: translate3d(-10px, 36px, 0px) !important;
   }
   .dropdown-menu li{
       background-color: var(--backgroundPrimario) !important;
@@ -144,6 +145,7 @@
   }
   .btn-close{
       background: transparent url("../img/logos/x2.png") center/1em auto no-repeat;
+      font-size: 1.5rem;
   }
 
   .color-terciario{
