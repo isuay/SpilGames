@@ -8,16 +8,18 @@
     <div class="col-sm-4">
         <h5 class="text-upper">Games</h5>
         <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="./uno.html" class="nav-link nav-link-footer p-0 text-muted">Uno</a></li>
+            <li class="nav-item mb-2"><a href="./solitario.html" class="nav-link nav-link-footer p-0 text-muted">Solitaire</a></li>
+            <li class="nav-item mb-2"><a href="./memoria.html" class="nav-link nav-link-footer p-0 text-muted">Memory</a></li>
         </ul>
     </div>
 
     <div class="col-sm-4">
         <h5 class="text-upper">Contact</h5>
         <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="./index.php" class="nav-link nav-link-footer p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link nav-link-footer p-0 text-muted">About us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link nav-link-footer p-0 text-muted">Contact us</a></li>
         </ul>
     </div>
 </footer>
