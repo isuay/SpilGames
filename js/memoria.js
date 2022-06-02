@@ -21,51 +21,39 @@ cards = [
     "Stormtrooper.png",
 ];
 
-// console.log(cards);
-// console.log(cards.length);
+var arrayComparar = [];
+var arrayEliminar = [];
+var contadorMov = 0;
+var contadorFin = 0;
 
-// const rotar = document.querySelectorAll('.inner-wrap');
-
-// console.log(rotar);
 
 // NodeList con una lista de todos los elementos que contienen la clase carta
 const cartaSeleccionada = document.querySelectorAll('.carta');
 
+
+empezarJuego();
+
 // Verificancion de clicks
-cartaSeleccionada.forEach(sel => sel.addEventListener('click', event => {
-    // console.log(el);
-    console.log('He hecho click');
-    const hijo = sel.firstElementChild;
-    // console.log(hijo);
-    // console.log(hijo.classList);
-    // console.log(hijo.classList.contains("flipped"));
-    // console.log(hijo.classList.add("flipped"));
-    if (hijo.classList.contains("flipped")) {
-        // console.log('Contiene la clase flipped');
-        return;
-    } else {
-        // console.log('No contiene la clase flipped');
-        hijo.classList.add("flipped");
-    }
+function clicked() {
+    cartaSeleccionada.forEach(sel => sel.addEventListener('click', event => {
+        console.log('He hecho click');
+        const hijo = sel.firstElementChild;
+        // console.log(hijo);
+        if (hijo.classList.contains("flipped")) {
+            return;
+        } else {
+            hijo.classList.add("flipped");
+        }
+        const imgNombre = hijo.lastElementChild.firstElementChild.src;
+        // console.log(imgNombre);
+        arrayComparar.push(imgNombre);
+        arrayEliminar.push(hijo);
+        console.log(arrayComparar);
+        comparar();
+    }));
+}
 
-    // rotar.forEach(rot => rot.addEventListener('click', event => {
-    //     console.log(rot);
-    //     if (rot.classList.contains("flipped")) {
-    //         return;
-    //     }
-    //     rot.classList.add("flipped");
-    //     console.log('Click');
-    // }))
-}));
-
-// function random_card2() {
-//     if (cards.lenght > 0) {
-//         var rand = Math.floor(Math, random() * cards.lenght);
-//         var html = "card: <img src='Imagenes/" + cards[rand][0] + "'/><br/>points:" + document.getElementById("myDiv").innerHTML += html;
-//         cards.splice(rand, 1);
-//     }
-// }
-
+clicked();
 // Funcion para barajar el array de cartas y salgan aleatorias
 function random_card(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -81,16 +69,66 @@ function random_card(array) {
     return array;
 }
 
-// NodeList con una lista de todos los elementos que contienen la clase reverso
-const casillas = document.querySelectorAll(".reverso");
 
-// Usamos la función para mezclar las imágenes de nuestro array
-var array = random_card(cards);
+function empezarJuego() {
 
-// Imprimimos las imágenes en la parte de atrás de cada carta
-for (var i = 0; i < casillas.length; i++) {
-    var img = document.createElement("img");
-    img.src = "img/memoria/" + array[i];
-    casillas[i].appendChild(img);
+    // NodeList con una lista de todos los elementos que contienen la clase reverso
+    const casillas = document.querySelectorAll(".reverso");
+
+    // Usamos la función para mezclar las imágenes de nuestro array
+    var array = random_card(cards);
+
+    // Imprimimos las imágenes en la parte de atrás de cada carta
+    for (var i = 0; i < casillas.length; i++) {
+        var img = document.createElement("img");
+        img.src = "img/memoria/" + array[i];
+        casillas[i].appendChild(img);
+    }
+}
+
+function comparar() {
+    // cartaSeleccionada.removeEventListener('click', clicked);
+    setTimeout(function () {
+        if (arrayComparar.length === 2) {
+            if (arrayComparar[0] !== arrayComparar[1]) {
+                console.log('No son iguales');
+                // console.log(hijo1);
+                // console.log(hijo);
+                arrayEliminar[0].classList.remove("flipped");
+                arrayEliminar[1].classList.remove("flipped");
+                contadorMov++;
+                arrayComparar = [];
+                arrayEliminar = [];
+            } else {
+                contadorMov++;
+                contadorFin += 2;
+                arrayComparar = [];
+                arrayEliminar = [];
+                ganar();
+            }
+        }
+    }, 2000)
+}
+
+function ganar() {
+    if (contadorFin === 18) {
+        alert('¡Enhorabuena! Has acabado el juego con ' + contadorMov + ' movimientos');
+        reiniciar();
+    }
+}
+
+function reiniciar() {
+    cartaSeleccionada.forEach(sel => {
+        const hijo = sel.firstElementChild;
+        if (hijo.classList.contains("flipped")) {
+            hijo.classList.remove("flipped");
+            hijo.lastElementChild.firstElementChild.remove();
+        }
+    });
+    checkArray = [];
+    idArray = [];
+    contador = 0;
+    fin = 0;
+    empezarJuego();
 }
     // });
