@@ -2,27 +2,31 @@
     font-family: 'Poppins-regular';
     src: url(../fonts/Poppins-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Poppins-light';
     src: url(../fonts/Poppins-Light.ttf);
 }
+
 @font-face {
     font-family: 'Poppins-medium';
     src: url(../fonts/Poppins-Medium.ttf);
 }
+
 @font-face {
     font-family: 'Furtura-regular';
     src: url(../fonts/futur.ttf);
 }
-:root{
+
+:root {
     /*fuentes de google en variables*/
     --fuentePrincipal: 'Poppins-regular', sans-serif;
     --fuenteTexto: 'Futura-regular', sans-serif;
     --fuenteSecundaria: 'Poppins-light', sans-serif;
     --fuenteTerciaria: 'Poppins-medium', sans-serif;
-  
+
     /*colores*/
-    --colorPrimario: #778DA9; 
+    --colorPrimario: #778DA9;
     --colorSecundario: #778DA9;
     --colorTerciario: #E0E1DD;
     --overlayColor: #8774E1E6;
@@ -50,137 +54,184 @@
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
-    --borderColor: rgba(53,55,64,0.2);
+    --borderColor: rgba(53, 55, 64, 0.2);
     --background1: #E0E1DD;
     --backgroundPrimario: #0D1B2A;
     --backgroundOpcional: #1B263B;
     --background2: #f1f0ec;
-    --background3: #FFFFFF; 
+    --background3: #FFFFFF;
     --background4: #3b3b3b;
     --background5: #333;
     --background6: #1D1D1D;
-  }
-  html {
+}
+
+html {
     box-sizing: border-box !important;
-    font-size: 62.5% !important; /* Now 10px = 1rem! */
-  }
-  body {
-    font-size: 16px !important; /* px fallback */
-    font-size: 1.6rem !important; /* default font-size for document */
-    line-height: 1.5 !important; /* a nice line-height */
+    font-size: 62.5% !important;
+    /* Now 10px = 1rem! */
+}
+
+body {
+    font-size: 16px !important;
+    /* px fallback */
+    font-size: 1.6rem !important;
+    /* default font-size for document */
+    line-height: 1.5 !important;
+    /* a nice line-height */
     margin: 0;
     background-color: var(--negro);
-  }
-  .body.home{
-        font-size: 16px; /* px fallback */
-        font-size: 1.6rem; /* default font-size for document */
-        line-height: 1.5; /* a nice line-height */
-        margin: 0;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
-  .nav-link{
-      color: var(--colorTerciario) !important;
-  }
-  .nav-link:hover{
-      color: var(--colorSecundario) !important;
-  }
-  header .nav-item{
-      text-transform: uppercase;
-      font-family: var(--fuenteSecundaria) !important;
-  }
-  header .nav-item a{
-      font-size: 2.2rem;
-  }
-  header{
-      background-color: var(--backgroundPrimario) !important;
-      margin: 0 !important;
-  }
-  #f1{
-      background-color: var(--backgroundOpcional) !important;
-      margin: 0 !important;
-      padding: 4rem 0 !important;
-  }
-  #f1 h5{
-      font-family: var(--fuenteTerciaria);
-      font-size: 2.2rem;
-  }
-  #f1 .nav-item a{
-      font-family: var(--fuenteSecundaria) !important;
-      font-size: 1.8rem;
-  }
-  @media screen and (max-width: 576px) {
-    #f1 div{
+.body.home {
+    font-size: 16px;
+    /* px fallback */
+    font-size: 1.6rem;
+    /* default font-size for document */
+    line-height: 1.5;
+    /* a nice line-height */
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.nav-link {
+    color: var(--colorTerciario) !important;
+}
+
+.nav-link-footer {
+    display: contents !important;
+}
+
+.nav-link:hover {
+    color: var(--colorSecundario) !important;
+}
+
+header .nav-item {
+    text-transform: uppercase;
+    font-family: var(--fuenteSecundaria) !important;
+}
+
+header .nav-item a {
+    font-size: 2.2rem;
+}
+
+header {
+    background-color: var(--backgroundPrimario) !important;
+    margin: 0 !important;
+}
+
+#f1 {
+    background-color: var(--backgroundOpcional) !important;
+    margin: 0 !important;
+    padding: 4rem 0 !important;
+}
+
+#f1 h5 {
+    font-family: var(--fuenteTerciaria);
+    font-size: 2.2rem;
+}
+
+#f1 .nav-item a {
+    font-family: var(--fuenteSecundaria) !important;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 576px) {
+    #f1 div {
         margin-bottom: 2rem;
     }
-    #f2 div{
+
+    #f2 div {
         margin-bottom: 2rem;
     }
 }
 
-  #f2{
-      background-color: var(--backgroundPrimario) !important;
-  }
-  .dropdown-menu{
-      background-color: var(--backgroundPrimario) !important;
-  }
-  .dropdown-menu li{
-      background-color: var(--backgroundPrimario) !important;
-  }
-  .dropdown-menu li a{
-      background-color: transparent !important;
-  }
-  .dropdown-menu li:hover{
-      background-color: var(--backgroundOpcional) !important;
-  }
-  .dropdown-item{
-      color: var(--colorTerciario) !important;
-  }
-  .offcanvas-end{
-      width: 240px !important;
-      background-color: #1B263B;
-  }
-  .btn-close{
-      background: transparent url("../img/logos/x2.png") center/1em auto no-repeat;
-  }
+#f2 {
+    background-color: var(--backgroundPrimario) !important;
+}
 
-  .color-terciario{
-      color: var(--colorTerciario);
-  }
-body{
+.dropdown-menu {
+    background-color: var(--backgroundPrimario) !important;
+}
+
+.dropdown-menuOffCanvas {
+    transform: translate3d(-10px, 36px, 0px) !important;
+}
+
+.dropdown-menu li {
+    background-color: var(--backgroundPrimario) !important;
+}
+
+.dropdown-menu li a {
+    background-color: transparent !important;
+}
+
+.dropdown-menu li:hover {
+    background-color: var(--backgroundOpcional) !important;
+}
+
+.dropdown-item {
+    color: var(--colorTerciario) !important;
+}
+
+.offcanvas-end {
+    width: 240px !important;
+    background-color: #1B263B;
+}
+
+.btn-close {
+    background: transparent url("../img/logos/x2.png") center/1em auto no-repeat;
+    font-size: 1.5rem;
+}
+
+.color-terciario {
+    color: var(--colorTerciario);
+}
+
+body {
     background-color: var(--backgroundPrimario);
 }
-  /*TITULOS*/
-  h1{
-      font-family: var(--fuentePrincipal) !important;
-  }
-  h2{
-      font-family: var(--fuentePrincipal) !important;
-  }
-  h3{
-      font-family: var(--fuentePrincipal) !important;
-  }
-  h4{
-      font-family: var(--fuentePrincipal) !important;
-  }
-  h5{
-      color: var(--colorTerciario) !important;
-  }
-  p{
-      font-family: var(--fuenteTexto) !important;
-  }
+
+/*TITULOS*/
+h1 {
+    font-family: var(--fuentePrincipal) !important;
+}
+
+h2 {
+    font-family: var(--fuentePrincipal) !important;
+}
+
+h3 {
+    font-family: var(--fuentePrincipal) !important;
+}
+
+h4 {
+    font-family: var(--fuentePrincipal) !important;
+}
+
+h5 {
+    color: var(--colorTerciario) !important;
+}
+
+p {
+    font-family: var(--fuenteTexto) !important;
+}
 
 
-  /*UTILIDADES*/
-  .contenedor{
-      max-width: 1200px;
-  }
-  .text-upper{
-      font-family: var(--fuentePrincipal);
-      text-transform: uppercase;
-  }
-  .mx-auto{
-      margin: 0 auto;
-  }
+/*UTILIDADES*/
+.contenedor {
+    max-width: 1200px;
+}
+
+.text-upper {
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
