@@ -110,7 +110,23 @@ ul li img {
   
   .social-link:hover,
   .social-link:focus {
-    background: #ddd;
+    background: rgb(180, 180, 180);
     text-decoration: none;
     color: #555;
+  }
+
+  .fondo-aboutUs {
+      background-color: #1B263B;
+  }
+
+  .fondoCards {
+      background-color: #E0E1DD;
+  }
+
+  .colorLetra {
+      color: #E0E1DD;
+  }
+
+  .nombres {
+      color: #1B263B !important;
   }

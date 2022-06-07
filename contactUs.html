@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <meta name="description" content="HTML5, CSS3">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header class="row d-flex flex-wrap justify-content-between py-3 align-middle contenedor mx-auto">
+
+        <div id="alineacion-img" class="col-md-4">
+            <img id="logo-web" src="img/logos/logo_v1.png" alt="Logo">
+        </div>
+
+        <div class="col-md-8 d-flex justify-content-end">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container" id="main_nav">
+                    <ul class="nav nav-pills" id="menu-links">
+                        <li class="nav-item"><a href="./index.php" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                Games
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./Solitario/public/index.html" class="dropdown-item">Solitaire</a></li>
+                                <li><a href="./uno.html" class="dropdown-item">uno</a></li>
+                                <li><a href="./memoria.html" class="dropdown-item">memory</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Contact Us</h3>
+                        <p>Fill in the data below.</p>
+                        <form class="requires-validation" novalidate>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                                <div class="valid-feedback">Username field is valid!</div>
+                                <div class="invalid-feedback">Username field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail Address"
+                                    required>
+                                <div class="valid-feedback">Email field is valid!</div>
+                                <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select mt-3" required>
+                                    <option selected disabled value="">Options</option>
+                                    <option value="jweb">Error</option>
+                                    <option value="sweb">Improvement</option>
+                                    <option value="pmanager">Comment</option>
+                                </select>
+                                <div class="valid-feedback">You selected a position!</div>
+                                <div class="invalid-feedback">Please select an option!</div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="password" name="password" placeholder="Password"
+                                    required>
+                                <div class="valid-feedback">Password field is valid!</div>
+                                <div class="invalid-feedback">Password field cannot be blank!</div>
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="card">
+        <div class="card-body">
+            <form>
+                <h2 class="text-center py-4 font-bold font-up danger-text">Contact us</h2>
+                <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" id="form31" class="form-control">
+                    <label for="form31">Your name</label>
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="text" id="form21" class="form-control">
+                    <label for="form21">Your email</label>
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-tag prefix grey-text"></i>
+                    <input type="text" id="form321" class="form-control">
+                    <label for="form341">Subject</label>
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-pencil prefix grey-text"></i>
+                    <textarea type="text" id="form81" class="md-textarea" style="height: 100px"></textarea>
+                    <label for="form81">Your message</label>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-outline-danger btn-lg">Send</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <footer
+        class="d-flex row justify-content-around align-items-center py-4 text-center border-bottom flex-wrap border-top"
+        id="f1">
+        <div class="col-sm-4">
+            <img id="logo-web" src="img/logos/logo_v1.png" alt="Logo">
+        </div>
+
+        <div class="col-sm-4">
+            <h5 class="text-upper">Games</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./uno.html" class="nav-link nav-link-footer p-0 text-muted">Uno</a>
+                </li>
+                <li class="nav-item mb-2"><a href="./solitario.html"
+                        class="nav-link nav-link-footer p-0 text-muted">Solitaire</a></li>
+                <li class="nav-item mb-2"><a href="./memoria.html"
+                        class="nav-link nav-link-footer p-0 text-muted">Memory</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+            <h5 class="text-upper">Contact</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.php" class="nav-link nav-link-footer p-0 text-muted">Home</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link nav-link-footer p-0 text-muted">About us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link nav-link-footer p-0 text-muted">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <footer class="row d-flex flex-wrap justify-content-around contenedor align-items-center py-3 contenedor mx-auto"
+        id="f2">
+        <div class="col-sm-6 d-flex align-items-center justify-content-center">
+            <span class="text-muted">&copy; 2022 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-sm-6 justify-content-center list-unstyled d-flex">
+            <li class="ms-3">
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                    <i class="fa-brands fa-twitter color-terciario"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram color-terciario"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://es-es.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook color-terciario"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

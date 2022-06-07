@@ -18,8 +18,8 @@
         <h5 class="text-upper">Contact</h5>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./index.php" class="nav-link nav-link-footer p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link nav-link-footer p-0 text-muted">About us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link nav-link-footer p-0 text-muted">Contact us</a></li>
+            <li class="nav-item mb-2"><a href="./aboutUs.html" class="nav-link nav-link-footer p-0 text-muted">About us</a></li>
+            <li class="nav-item mb-2"><a href="./contactUs.html" class="nav-link nav-link-footer p-0 text-muted">Contact us</a></li>
         </ul>
     </div>
 </footer>
