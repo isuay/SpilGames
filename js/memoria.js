@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // Array con las imágenes del juego
+    // Lista con las imágenes del juego
     cards = [
         "AlianzaRebelde.png",
         "AlianzaRebelde.png",
@@ -27,6 +27,11 @@ $(document).ready(function () {
     var contadorMov = 0; // Contador de movimientos
     var contadorFin = 0; // Contador de parejas encontradas para acabar el juego
 
+    // Sonidos juego
+    let sonidoGirar = new Audio();
+    sonidoGirar.src = "./sound/card.mp3";
+    let sonidoGanar = new Audio();
+    sonidoGanar.src = "./sound/ganar.mp3";
 
     // Funcion para barajar el array de cartas y salgan aleatorias
     function barajarCartas(array) {
@@ -59,48 +64,51 @@ $(document).ready(function () {
     }
 
     // Listener del click
-    $(".carta").on("click", girar);
+    $(".carta").on("click", clickCarta);
 
     // Función que gira la carta
-    function girar() {
+    function clickCarta() {
         // Verifica si la carta tiene la clase flipped
         if ($(this).find(".inner-wrap").hasClass("flipped")) {
             return;
         } else {
             $(this).find(".inner-wrap").toggleClass("flipped");
+            sonidoGirar.play();
         }
         arrayComparar.push($(this).find("img").attr("src")); // Añade el src de la imagen al array
         arrayEliminar.push($(this).find(".inner-wrap")); // Añade el div con clase inner-wrap al que hemos dado click al array
-        comparar();
+        checkIgual();
     }
 
-    // Función para comparar si dos cartas son iguales
-    function comparar() {
+    // Función para comprobar si dos cartas son iguales
+    function checkIgual() {
 
         if (arrayComparar.length === 2) {
             // Quita el listener a las cartas para que no le puedas dar click
-            $(".carta").off("click", girar);
+            $(".carta").off("click", clickCarta);
             setTimeout(function () {
                 if (arrayComparar[0] !== arrayComparar[1]) {
                     arrayEliminar[0][0].classList.remove("flipped");
                     arrayEliminar[1][0].classList.remove("flipped");
+                    sonidoGirar.play();
                 } else {
                     contadorFin += 2;
                 }
                 contadorMov++;
                 arrayComparar = [];
                 arrayEliminar = [];
-                ganar();
+                checkGanar();
                 document.querySelector("#movimientos").innerHTML = contadorMov;
                 // Vuelve a añadir el listener del click a las cartas
-                $(".carta").on("click", girar);
+                $(".carta").on("click", clickCarta);
             }, 1000);
         }
     }
 
     // Función para determinar si se ha ganado o no
-    function ganar() {
+    function checkGanar() {
         if (contadorFin === 18) {
+            sonidoGanar.play();
             alert('¡Enhorabuena! Has acabado el juego con ' + contadorMov + ' movimientos');
             reiniciar();
         }
@@ -110,6 +118,7 @@ $(document).ready(function () {
     function reiniciar() {
         $(".inner-wrap").removeClass("flipped");
         $(".reverso").find("img").remove();
+        sonidoGirar.play();
         arrayComparar = [];
         arrayEliminar = [];
         contadorMov = 0;
