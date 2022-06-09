@@ -109,8 +109,10 @@ $(document).ready(function () {
     function checkGanar() {
         if (contadorFin === 18) {
             sonidoGanar.play();
-            alert('¡Enhorabuena! Has acabado el juego con ' + contadorMov + ' movimientos');
-            reiniciar();
+            setTimeout(function () {
+                alert('¡Enhorabuena! Has acabado el juego con ' + contadorMov + ' movimientos');
+                reiniciar();
+            }, 200);
         }
     }
 

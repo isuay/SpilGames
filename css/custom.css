@@ -58,6 +58,7 @@
     --background1: #E0E1DD;
     --backgroundPrimario: #0D1B2A;
     --backgroundOpcional: #1B263B;
+    --backgroundTercero: #415A77;
     --background2: #f1f0ec;
     --background3: #FFFFFF;
     --background4: #3b3b3b;
@@ -214,11 +215,13 @@ h4 {
 }
 
 h5 {
+    font-family: var(--fuentePrincipal) !important;
     color: var(--colorTerciario) !important;
 }
 
 p {
     font-family: var(--fuenteTexto) !important;
+    font-size: 2rem;
 }
 
 
@@ -234,4 +237,47 @@ p {
 
 .mx-auto {
     margin: 0 auto;
+}
+
+/* About Us */
+.fondo-aboutUs {
+    background-color: var(--colorTerciario);
+}
+
+.fondoCards {
+    background-color: white;
+}
+
+.colorLetra {
+    color: var(--backgroundOpcional);
+    font-size: 2.0rem;
+}
+
+.nombres {
+    color: var(--backgroundOpcional) !important;
+    font-size: 1.6rem;
+}
+
+.fa-brands{
+    color: var(--backgroundOpcional);
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: var(--colorTerciario);
 }

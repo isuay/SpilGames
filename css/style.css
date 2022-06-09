@@ -30,12 +30,20 @@
 #texto-medio {
     /* top: 50%;
     transform: translateY(-50%); */
-    bottom: 16.25rem;
+    /* bottom: 16.25rem; */
+    top: 45%;
+    padding: 0;
 }
 
 #alineacion-img {
     text-align: center;
     align-items: center;
+}
+
+#alineacion-img2 {
+    text-align: center;
+    align-items: center;
+    display: none !important;
 }
 
 ul li a {
@@ -89,44 +97,28 @@ ul li img {
     .carousel-item img {
         height: 65vh;
     }
-    
+
     .carousel-caption h3 {
         font-size: 4rem;
     }
 }
 
-.social-link {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
-  }
-  
-  .social-link:hover,
-  .social-link:focus {
-    background: rgb(180, 180, 180);
-    text-decoration: none;
-    color: #555;
-  }
+@media screen and (max-width: 1024px) {
+    #header-normal {
+        display: none !important;
+    }
 
-  .fondo-aboutUs {
-      background-color: #1B263B;
-  }
+    #alineacion-img2 {
+        display: flex !important;
+    }
 
-  .fondoCards {
-      background-color: #E0E1DD;
-  }
+    .carousel-caption h3 {
+        font-size: 4rem;
+    }
+}
 
-  .colorLetra {
-      color: #E0E1DD;
-  }
-
-  .nombres {
-      color: #1B263B !important;
-  }
+@media screen and (max-width: 1024px) {
+    #f1 img {
+        width: 40% !important;
+    }
+}
