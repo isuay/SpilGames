@@ -193,6 +193,21 @@ header {
 .color-terciario {
     color: var(--colorTerciario) !important;
 }
+.border-red{
+    border: 2px solid var(--red);
+  }
+  .border-green{
+    border: 2px solid var(--green);
+  }
+  .displayn{
+    display: none;
+  }
+  .op50{
+    opacity: 50%;
+  }
+  .no-cursor{
+    cursor: not-allowed;
+  }
 
 body {
     background-color: var(--backgroundPrimario);
