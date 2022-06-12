@@ -65,7 +65,8 @@ $(document).ready(function () {
                 casillas[i].appendChild(img);
             }
         }, 200);
-
+        mostrarMovimientos();
+        
         // pContador.innerHTML = `
         //     <p>Movimientos</p>
         //     <p id="movimientos">0</p>`;
@@ -87,6 +88,7 @@ $(document).ready(function () {
         arrayComparar.push($(this).find("img").attr("src")); // Añade el src de la imagen al array
         arrayEliminar.push($(this).find(".inner-wrap")); // Añade el div con clase inner-wrap al que hemos dado click al array
         checkIgual();
+        mostrarMovimientos();
     }
 
     // Función para comprobar si dos cartas son iguales
@@ -107,7 +109,7 @@ $(document).ready(function () {
                 arrayComparar = [];
                 arrayEliminar = [];
                 checkGanar();
-                document.querySelector("#movimientos").innerHTML = contadorMov;
+                // document.querySelector("#movimientos").innerHTML = contadorMov;
                 // Vuelve a añadir el listener del click a las cartas
                 $(".carta").on("click", clickCarta);
             }, 1000);
@@ -139,4 +141,20 @@ $(document).ready(function () {
     }
 
     empezarJuego();
+
+    function mostrarMovimientos(){
+        const divMov = document.querySelector('#movimiento-zone');
+        limpiarHTML(divMov);
+            let p = document.createElement('p');
+            p.innerHTML =`
+            Movimientos <br> ${contadorMov}
+            `;
+            divMov.appendChild(p);
+    }
+    function limpiarHTML(elemento){
+        while(elemento.firstChild){
+            elemento.removeChild(elemento.firstChild);
+        }
+    }
 });
+
