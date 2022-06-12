@@ -30,12 +30,20 @@
 #texto-medio {
     /* top: 50%;
     transform: translateY(-50%); */
-    bottom: 16.25rem;
+    /* bottom: 16.25rem; */
+    top: 45%;
+    padding: 0;
 }
 
 #alineacion-img {
     text-align: center;
     align-items: center;
+}
+
+#alineacion-img2 {
+    text-align: center;
+    align-items: center;
+    display: none !important;
 }
 
 ul li a {
@@ -68,6 +76,7 @@ ul li img {
 
 #offcanvasRight {
     width: 50% !important;
+    background-color: #0b0a0a;
 }
 
 .offcanvas-header .btn-close {
@@ -89,8 +98,22 @@ ul li img {
     .carousel-item img {
         height: 65vh;
     }
-    
+
     .carousel-caption h3 {
         font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #header-normal {
+        display: none !important;
+    }
+
+    #alineacion-img2 {
+        display: flex !important;
+    }
+
+    #f1 img {
+        width: 40% !important;
     }
 }

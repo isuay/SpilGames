@@ -1,0 +1,190 @@
+body {
+    background-image: url('./img/green-velvet.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+/* 
+#tablero {
+  display: flex;
+  flex-direction: row;
+} */
+
+
+
+#mazos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    padding: 2px;
+}
+
+#mazo_Entrada {
+    border: 1px solid black;
+    list-style: none;
+    padding: 2px;
+}
+
+#almacenTrebol {
+    background-image: url('./img/TREBOL.PNG');
+    background-size: contain;
+    /**background-color: gray !important;**/
+}
+
+#almacenCorazones {
+    background-color: white;
+    background-image: url('./img/CORAZON.PNG');
+    background-size: contain;
+    
+}
+
+#almacenPicas {
+    background:white;
+    background-image: url('./img/PICA.PNG');
+    background-size: contain;
+}
+
+#almacenDiamantes {
+    background:white;
+    background-image: url('./img/DIAMANTE.PNG');
+    background-size: contain;;
+}
+
+
+
+#listElementDown {
+    height: 6rem;
+    width: auto;
+}
+
+img {
+    border: 2px solid black;
+    height: 15vh;
+    width: 5vw;
+}
+
+ul {
+    list-style: none;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+}
+
+.contenedorColumnas {
+    display: flex;
+}
+
+.columDisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.columDisplay li {
+    /* padding: 50px; */
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.columnasHTML{
+    min-width: 5vw;
+    min-height: 15vh;
+    border:1px solid white;
+    border-radius: 2px;
+    padding: 0;
+}
+.columnasHTML .carta+.carta {
+    margin-top: -13vh;
+}
+
+
+#mazoEntrada{
+    margin-left: 2vw;
+}
+#mazoRobo {
+    border: 1px solid black;
+    height: 20vh;
+    list-style: none;
+    padding: 2px;
+    margin-left: 2vw;
+}
+#mazoRobo .carta:not(:last-child){
+    pointer-events: none;
+}
+
+
+
+
+#mazoRobo > .carta + .carta{
+    margin-top: -13vh!important;
+}
+#mazoEntrada > .carta + .carta{
+    margin-top: -15.5vh!important;
+}
+
+.depositos{
+    position: absolute;
+    bottom: 0;
+}
+
+.deposito{
+    position: relative;
+    width:5vw;
+    height: 15vh;
+    display: inline-block;
+    
+}
+.deposito > .carta + .carta{
+    margin-top: -15.5vh;
+}
+.deposito > * {
+    pointer-events: none;
+}
+
+#reiniciar{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    padding: 2.5vw;
+    position: fixed;
+    bottom: 10;
+    right: 10;
+    color:white;
+    font-size: 32px;
+}
+
+
+@media (max-width: 1200px) {
+    #cuerpoTablero{
+        padding: 0;
+    }
+    img{
+        height: 17.5vh;
+        width: 7.5vw;
+    }
+
+    #mazoRobo > .carta + .carta{
+        margin-top: -15vh!important;
+    }
+    #mazoEntrada > .carta + .carta{
+        margin-top: -17.5vh!important;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #cuerpoTablero{
+        padding: 0;
+    }   
+    img{
+        height: 13.5vh;
+        width: 9vw;
+    }
+
+    #mazoRobo > .carta + .carta{
+        margin-top: -15vh!important;
+    }
+    #mazoEntrada > .carta + .carta{
+        margin-top: -16.5vh!important;
+    }
+  }

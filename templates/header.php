@@ -16,31 +16,73 @@
 </head>
 
 <body>
-    <header class="row d-flex flex-wrap justify-content-between py-3 align-middle contenedor mx-auto">
+
+    <!-- Header normal -->
+    <header id="header-normal" class="row d-flex flex-wrap justify-content-between py-3 align-middle contenedor mx-auto">
 
         <div id="alineacion-img" class="col-md-4">
-            <img id="logo-web" src="img/logos/logo_v1.png" alt="Logo">
+            <a href="./index.php"><img id="logo-web" src="img/logos/logo_v1.png" alt="Logo"></a>
         </div>
             
         <div class = "col-md-8 d-flex justify-content-end">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container" id="main_nav">
                     <ul class="nav nav-pills" id="menu-links">
-                        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="./index.php" class="nav-link" aria-current="page">Home</a></li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 Games
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="./solitario.html" class="dropdown-item">Solitaire</a></li>
+                                <li><a href="./Solitario/public/index.html" class="dropdown-item">Solitaire</a></li>
                                 <li><a href="./uno.html" class="dropdown-item">uno</a></li>
                                 <li><a href="./memoria.html" class="dropdown-item">memory</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
+                        <li class="nav-item"><a href="./contactUs.html" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
         
+    </header>
+
+    <!-- Header modelo offCanvas -->
+    <div class="offcanvas offcanvas-end d-flex" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <a href="./index.php"><img id="logo-offCanvas" src="img/logos/logo_v1.png" alt="Logo"></a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav nav-pills" id="menu-offCanvas">
+                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        GAMES
+                    </a>
+                    <ul class="dropdown-menu dropdown-menuOffCanvas">
+                        <li><a href="./Solitario/public/index.html" class="dropdown-item juegosOffCanvas">SOLITAIRE</a></li>
+                        <li><a href="./uno.html" class="dropdown-item juegosOffCanvas">UNO</a></li>
+                        <li><a href="./memoria.html" class="dropdown-item juegosOffCanvas">MEMORY</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link">GAMES</a></li>
+                <li class="nav-item"><a href="./solitario.html" class="nav-link juegosOffCanvas">SOLITAIRE</a></li>
+                <li class="nav-item"><a href="./uno.html" class="nav-link juegosOffCanvas"></a></li>
+                <li class="nav-item"><a href="./memoria.html" class="nav-link juegosOffCanvas">MEMORY</a></li> -->
+                <li class="nav-item"><a href="#" class="nav-link">EMULATOR</a></li>
+                <li class="nav-item"><a href="./contactUs.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header id="alineacion-img2" class="d-flex flex-wrap justify-content-between py-3 mb-4 mx-5">
+        <div class="col-4">
+            <a href="./index.php"><img id="logo-web" src="img/logos/logo_v1.png" alt="Logo"></a>
+        </div>
+        <button id="btn-offcanvas" class="btn col-8" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa-solid fa-bars color-terciario"></i>
+        </button>
     </header>
