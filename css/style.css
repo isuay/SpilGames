@@ -76,6 +76,7 @@ ul li img {
 
 #offcanvasRight {
     width: 50% !important;
+    background-color: #0b0a0a;
 }
 
 .offcanvas-header .btn-close {
@@ -112,12 +113,6 @@ ul li img {
         display: flex !important;
     }
 
-    .carousel-caption h3 {
-        font-size: 4rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
     #f1 img {
         width: 40% !important;
     }

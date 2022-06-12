@@ -33,6 +33,10 @@ $(document).ready(function () {
     let sonidoGanar = new Audio();
     sonidoGanar.src = "./sound/ganar.mp3";
 
+    // const cont = document.getElementById("contador");
+    // console.log(object);
+    // var pContador = document.createElement("p");
+
     // Funcion para barajar el array de cartas y salgan aleatorias
     function barajarCartas(array) {
         for (var i = array.length - 1; i > 0; i--) {
@@ -61,6 +65,11 @@ $(document).ready(function () {
                 casillas[i].appendChild(img);
             }
         }, 200);
+
+        // pContador.innerHTML = `
+        //     <p>Movimientos</p>
+        //     <p id="movimientos">0</p>`;
+        // cont.appendChild(pContador);
     }
 
     // Listener del click
@@ -125,6 +134,7 @@ $(document).ready(function () {
         arrayEliminar = [];
         contadorMov = 0;
         contadorFin = 0;
+        // cont.removeChild(pContador);
         empezarJuego();
     }
 

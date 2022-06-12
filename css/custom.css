@@ -26,9 +26,14 @@
     --fuenteTerciaria: 'Poppins-medium', sans-serif;
 
     /*colores*/
-    --colorPrimario: #778DA9;
-    --colorSecundario: #778DA9;
-    --colorTerciario: #E0E1DD;
+    --backgroundOpcional: #0f0e0e;
+    --backgroundPrimario: #0b0a0a;
+    --backgroundTercero: #151617;
+    --colorSecundario: rgb(190, 190, 190);
+    --colorTerciario: #fff;
+    --colorPrimario2: #778DA9;
+    --colorSecundario2: #778DA9;
+    --colorTerciario2: #E0E1DD;
     --overlayColor: #8774E1E6;
     --grisHover: #555;
     --grisOscuro: #2F2E2E;
@@ -56,9 +61,9 @@
     --danger: #dc3545;
     --borderColor: rgba(53, 55, 64, 0.2);
     --background1: #E0E1DD;
-    --backgroundPrimario: #0D1B2A;
-    --backgroundOpcional: #1B263B;
-    --backgroundTercero: #415A77;
+    --backgroundPrimario2: #0D1B2A;
+    --backgroundOpcional2: #1B263B;
+    --backgroundTercero2: #415A77;
     --background2: #f1f0ec;
     --background3: #FFFFFF;
     --background4: #3b3b3b;
@@ -81,6 +86,7 @@ body {
     /* a nice line-height */
     margin: 0;
     background-color: var(--negro);
+    color: #000;
 }
 
 .body.home {
@@ -172,16 +178,11 @@ header {
 }
 
 .dropdown-menu li:hover {
-    background-color: var(--backgroundOpcional) !important;
+    background-color: var(--backgroundTercero) !important;
 }
 
 .dropdown-item {
     color: var(--colorTerciario) !important;
-}
-
-.offcanvas-end {
-    width: 240px !important;
-    background-color: #1B263B;
 }
 
 .btn-close {
@@ -190,7 +191,7 @@ header {
 }
 
 .color-terciario {
-    color: var(--colorTerciario);
+    color: var(--colorTerciario) !important;
 }
 
 body {

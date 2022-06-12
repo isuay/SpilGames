@@ -20,9 +20,9 @@
             </div>
         </div>
         <div class="carousel-item">
-            <a href="./solitario.html"><img src="img/slider/solitaire.jpg" alt="Spider Solitaire" class="d-block"></a>
+            <a href="./Solitario/public/index.html"><img src="img/slider/solitaire.jpg" alt="Spider Solitaire" class="d-block"></a>
             <div class="carousel-caption">
-                <h3>SPIDER SOLITAIRE</h3>
+                <h3>SOLITAIRE</h3>
             </div>
         </div>
         <div class="carousel-item ">
