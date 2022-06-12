@@ -28,7 +28,6 @@ export class Solitario {
     *Pinta las columnas donde ira cada una de las cartas 
     */
     pintarTableroHtml() {
-        console.log(this.tablero)
         let htmlTotal: string = ``;
 
         for (let columnaCarta of this.tablero.columnasCartas) {
@@ -39,30 +38,38 @@ export class Solitario {
             htmlTotal += '</ul></li>';
 
         }
-        htmlTotal += ` <ul class="list-group">
+        htmlTotal += ` 
                 <li id="mazoEntrada" class="list-group-item">
 
                 </li>
-                <li id="mazoRobo" class="list-group-item-horizontal">
+                <li id="mazoRobo" class="list-group-item">
 
                 </li>
-                <li id="almacemn" class="list-group-item">
 
-                </li>
-                <li id="almacen2" class="list-group-item">
-
-                </li>
-                <li id="almacen3" class="list-group-item">
-
-                </li>
-                <li id="almacen4" class="list-group-item">
-
-                </li>
-            </ul>`
-        console.log('xd')
+            `
         document.getElementById('cuerpoTablero').innerHTML = htmlTotal;
-        console.log(this.tablero);
-        this.pintarMazo();
+        this.pintarMazoEntrada();
+    }
+
+    /**
+ * Pintar mazo html
+ */
+    pintarMazoEntrada() {
+        let htmlMazoEntrada = '';
+        let ultimaCarta: Carta;
+
+        for (let carta of this.tablero.mazoEntrada) {
+            if (carta) {
+                const htmlAPintar = this.pintarCarta(carta);
+                htmlMazoEntrada += htmlAPintar
+                ultimaCarta = carta;
+            }
+
+        }
+        document.getElementById("mazoEntrada").innerHTML = htmlMazoEntrada;
+        const cartaHTML = document.getElementById(ultimaCarta.numero + ultimaCarta.palo + 'Carta')
+        cartaHTML.addEventListener('click', this.robarCarta.bind({ app: this, html: cartaHTML }));
+
     }
     /**
     * Asigna evento
@@ -74,10 +81,21 @@ export class Solitario {
         }
         const columnasHtml = document.getElementsByClassName('columnasHTML');
         for (let i = 0; i < columnasHtml.length; i++) {
-            columnasHtml[i].addEventListener('drop', this.drop.bind(this));
+            columnasHtml[i].addEventListener('drop', this.drop.bind({ app: this, html: columnasHtml[i] }));
             columnasHtml[i].addEventListener('dragover', this.allowDrop);
         }
-        console.log(columnasHtml);
+        const almacenCorazones = document.getElementById('almacenCorazones');
+        const almacenPicas = document.getElementById('almacenPicas');
+        const almacenTrebol = document.getElementById('almacenTrebol');
+        const almacenDiamantes = document.getElementById('almacenDiamantes');
+        almacenCorazones.addEventListener('drop', this.dropAlmacen.bind({ app: this, html: almacenCorazones }));
+        almacenCorazones.addEventListener('dragover', this.allowDrop);
+        almacenPicas.addEventListener('drop', this.dropAlmacen.bind({ app: this, html: almacenPicas }));
+        almacenPicas.addEventListener('dragover', this.allowDrop);
+        almacenTrebol.addEventListener('drop', this.dropAlmacen.bind({ app: this, html: almacenTrebol }));
+        almacenTrebol.addEventListener('dragover', this.allowDrop);
+        almacenDiamantes.addEventListener('drop', this.dropAlmacen.bind({ app: this, html: almacenDiamantes }));
+        almacenDiamantes.addEventListener('dragover', this.allowDrop);
     }
     /**
      * Funcion Drag and Drop mover carta
@@ -89,21 +107,18 @@ export class Solitario {
     }
 
     drag(ev) {
-        console.log(ev.currentTarget.childNodes);
+        console.log(ev.target)
         ev.dataTransfer.setData("text", ev.target.id);
-
     }
 
-    drop(ev) {
+    drop(this: { app, html }, ev) {
+        console.log(this)
         ev.preventDefault();
-        console.log(ev);
         var data = ev.dataTransfer.getData("text");
+        console.log(data)
         const idCarta = data + 'Carta';
         const cartaOrigenHtml = document.getElementById(idCarta);
         const hermanos = cartaOrigenHtml.parentElement.children;
-        const cartaAnterior:any = cartaOrigenHtml.previousSibling; 
-        console.log(hermanos);
-        console.log(cartaAnterior);
         let originalEncontrado = false;
         let cartasDependientes: any[] = [];
         for (let i = 0; i < hermanos.length; i++) {
@@ -117,25 +132,31 @@ export class Solitario {
             }
         }
         const idColumnaDes = ev.target.id + 'Carta';
-        const columnaDestino = ev.path[2];
-        if (this.moverCarta(idCarta, idColumnaDes)) {
-            ev.path[2].appendChild(document.getElementById(idCarta));
-            for(let carta of cartasDependientes){
-                ev.path[2].appendChild(document.getElementById(carta.id));
+        console.log(idCarta + '----' + idColumnaDes)
+        if (this.app.moverCarta(idCarta, idColumnaDes)) {
+            this.app.descubrirCarta(cartaOrigenHtml);
+            this.html.appendChild(document.getElementById(idCarta));
+            for (let carta of cartasDependientes) {
+                this.html.appendChild(document.getElementById(carta.id));
             }
-            const identificador = cartaAnterior.id.split('Carta')[0];
-            const cartaDescubierta = document.getElementById(identificador);
-            console.log(identificador);
-            console.log(cartaDescubierta);
-            console.log(cartaDescubierta.getAttribute('src'));
-          if(cartaDescubierta.getAttribute('src') === 'img/no.PNG'){
-               cartaDescubierta.setAttribute('src', 'img/' + identificador + '.PNG');
-               cartaAnterior.addEventListener('dragstart', this.drag)
-               
-            }  
+
+        } else {
+            //Se está intentando mover a una columna vacia
+            if (this.html.children.length === 0) {
+                const cartaTS: Carta = Carta.generaCartaId(data);
+                if (cartaTS.numero === 13) {
+                    this.app.descubrirCarta(cartaOrigenHtml);
+                    this.html.appendChild(document.getElementById(idCarta));
+                    for (let carta of cartasDependientes) {
+                        this.html.appendChild(document.getElementById(carta.id));
+                    }
+                }
+
+            }
         }
-        
-        
+
+
+
     }
 
     /**
@@ -152,29 +173,130 @@ export class Solitario {
 
     }
 
-    /**
-     * Pintar mazo html
-     */
-     pintarMazo() {
-        let htmlMazoEntrada;
-        let ultimaCarta:Carta;
-        for(let carta of this.tablero.mazoEntrada){
-            htmlMazoEntrada += this.pintarCarta(carta);
-            ultimaCarta = carta;
-        }
-        document.getElementById("mazoEntrada").innerHTML = htmlMazoEntrada;
-        document.getElementById(ultimaCarta.numero + ultimaCarta.palo + 'Carta').addEventListener('click', this.robarCarta.bind(this));
 
-    }
     /**
      * Voltear carta del mazo al robarla
      */
-    robarCarta(ev){
+    robarCarta(this: { app, html }, ev) {
+        console.log(this);
+        console.log(ev)
         ev.preventDefault();
-        let idCartaMazoEntrada = document.getElementById(ev.target.id);
-        let mazoRobo = document.getElementById
+        let primeraCartaMazoEntrada: Carta = Carta.generaCartaId(ev.target.id);
+        const mazoRobo = document.getElementById('mazoRobo');
+        //Limpiamos los eventos de la ultima carta
+
+        const cartaMazoEntrada = document.getElementById(primeraCartaMazoEntrada.numero + primeraCartaMazoEntrada.palo + 'Carta');
+        //cartaMazoEntrada.addEventListener('dragstart', this.app.drag);
+        console.log(cartaMazoEntrada)
+        mazoRobo.appendChild(cartaMazoEntrada);
+        document.getElementById(ev.target.id).setAttribute('src', 'img/' + ev.target.id + '.PNG');
+        this.app.asignarNuevoRobo();
     }
 
+    /**
+     * Asignar robo a la ultima carta del Mazo entrada
+     */
+    asignarNuevoRobo() {
+        const ultimaCarta = document.getElementById("mazoEntrada").lastChild;
+        if (ultimaCarta) ultimaCarta.addEventListener('click', this.robarCarta.bind({ app: this, html: ultimaCarta }));
+
+    }
+    /**
+     * Funcion para poder almacenar cartas en los almacenes
+     */
+    dropAlmacen(this: { app, html }, ev) {
+        console.log('FUNCIÓN DROP ALMACEN')
+        const almacenDestino = this.html;
+
+
+        var dataCartaMandada = ev.dataTransfer.getData("text");
+        const cartaHTML = document.getElementById(dataCartaMandada + 'Carta');
+        const cartaMandada: Carta = Carta.generaCartaId(dataCartaMandada);
+        console.log(almacenDestino)
+        console.log(dataCartaMandada)
+        console.log('La carta enviada es')
+        console.log(cartaMandada)
+        if (this.app.compruebaPalo(cartaMandada, almacenDestino.id)) {
+            console.log(almacenDestino.children.length)
+            if (almacenDestino.children.length === 0 && cartaMandada.numero === 1) {
+                //No tiene ninguna carta aun
+                this.app.descubrirCarta(cartaHTML);
+                almacenDestino.appendChild(cartaHTML);
+                //Puede no ser la primera carta
+            } else {
+                const ultimaCartaAlmacen = almacenDestino.lastChild;
+                const cartaAlmacen: Carta = Carta.generaCartaId(ultimaCartaAlmacen.id.split("Carta")[0]);
+                if ((cartaAlmacen.numero + 1) === cartaMandada.numero) {
+                    this.app.descubrirCarta(cartaHTML);
+                    almacenDestino.appendChild(cartaHTML);
+                }
+                console.log(ultimaCartaAlmacen)
+            }
+        } else {
+            console.log('La carta no era del mismo palo')
+        }
+
+        this.app.compruebaVictoria();
+
+    }
+
+    /**
+     * Comprueba el palo de la carta
+     */
+    compruebaPalo(carta: Carta, almacen: string) {
+        switch (almacen) {
+            case 'almacenCorazones':
+                if (carta.palo === 'C') {
+                    return true
+                }
+                break;
+            case 'almacenTrebol':
+                if (carta.palo === 'T') {
+                    return true
+                }
+                break;
+            case 'almacenPicas':
+                if (carta.palo === 'P') {
+                    return true
+                }
+                break;
+            case 'almacenDiamantes':
+                if (carta.palo === 'D') {
+                    return true
+                }
+                break;
+        }
+    }
+
+    /**
+     * Descubre carta
+     */
+    descubrirCarta(cartaHTML) {
+        console.log(cartaHTML)
+        const cartaAnterior: any = cartaHTML.previousSibling;
+        if (cartaAnterior?.id) {
+            const identificador = cartaAnterior.id.split('Carta')[0];
+            const cartaDescubierta = document.getElementById(identificador);
+            if (cartaDescubierta.getAttribute('src') === 'img/no.PNG') {
+                cartaDescubierta.setAttribute('src', 'img/' + identificador + '.PNG');
+                cartaAnterior.addEventListener('dragstart', this.drag)
+
+            }
+        }
+
+    }
+
+    compruebaVictoria() {
+        const AC = document.getElementById('almacenCorazones');
+        const AP = document.getElementById('almacenPicas');
+        const AT = document.getElementById('almacenTrebol');
+        const AD = document.getElementById('almacenDiamantes');
+
+        if (AC.children.length === 13 && AP.children.length === 13 && AT.children.length === 13 && AD.children.length === 13) {
+            alert('¡HAS GANADO!');
+        }
+
+    }
 }
 
 
