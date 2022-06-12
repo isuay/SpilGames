@@ -205,6 +205,7 @@ export class Solitario {
      * Funcion para poder almacenar cartas en los almacenes
      */
     dropAlmacen(this: { app, html }, ev) {
+        ev.preventDefault();
         console.log('FUNCIÓN DROP ALMACEN')
         const almacenDestino = this.html;
 
