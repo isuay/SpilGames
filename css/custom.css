@@ -193,21 +193,26 @@ header {
 .color-terciario {
     color: var(--colorTerciario) !important;
 }
-.border-red{
+
+.border-red {
     border: 2px solid var(--red);
-  }
-  .border-green{
+}
+
+.border-green {
     border: 2px solid var(--green);
-  }
-  .displayn{
+}
+
+.displayn {
     display: none;
-  }
-  .op50{
+}
+
+.op50 {
     opacity: 50%;
-  }
-  .no-cursor{
+}
+
+.no-cursor {
     cursor: not-allowed;
-  }
+}
 
 body {
     background-color: var(--backgroundPrimario);
@@ -280,7 +285,7 @@ p {
     font-size: 1.6rem;
 }
 
-.fa-brands{
+.fa-brands {
     color: var(--backgroundOpcional);
 }
 
@@ -303,6 +308,11 @@ p {
     text-decoration: none;
     color: var(--colorTerciario);
 }
+
+/* .rounded{
+border-radius: 5px;
+} */
+
 #logo-web {
     width: 65%;
 }
