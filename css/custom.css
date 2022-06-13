@@ -297,3 +297,20 @@ p {
     text-decoration: none;
     color: var(--colorTerciario);
 }
+#logo-web {
+    width: 65%;
+}
+
+#logo-offCanvas {
+    width: 50%;
+}
+
+#menu-links {
+    align-items: center;
+}
+
+#menu-offCanvas {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
