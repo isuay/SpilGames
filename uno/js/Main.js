@@ -1,5 +1,6 @@
 //////* JUEGO DEL UNO V0.5 *//////
-// ALEXIS PÉREZ //
+// AUTORES PÁGINA //
+// 100% ALEXIS PÉREZ //
 /*AL CARGAR LA WEB*/
 window.addEventListener('DOMContentLoaded', webCargada);
 function webCargada() {

@@ -1,3 +1,9 @@
+<!-- AUTORES PÁGINA
+Este fichero contiene parte de código de una plantilla
+De la parte que hemos tocado nosotros:
+30% JOSÉ ROSALES RIOS
+70% IRIS SUAY PATRICIO -->
+
 <?php include './templates/header.php';?>
 
 <div class="page-wrapper bg-red">

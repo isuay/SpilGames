@@ -1,3 +1,7 @@
+<!-- AUTORES PÁGINA
+90% BLAYIMIR ALEXIS PÉREZ
+10% IRIS SUAY PATRICIO -->
+
 /*<?php include '../templates/header-games.php';?>
 <section>
   <!-- Slider -->

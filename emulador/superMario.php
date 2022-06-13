@@ -1,3 +1,6 @@
+<!-- AUTORES PÁGINA
+100% BLAYIMIR ALEXIS PÉREZ-->
+
 <?php include '../templates/header-games.php';?>
 <section id="juego">
     <div class="emulator-container d-flex flex-wrap justify-content-center"> 
