@@ -46,7 +46,7 @@
                                 <li><a href="./memoria/memoria.html" class="dropdown-item">memory</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
+                        <li class="nav-item"><a href="./emulador/index.php" class="nav-link">Emulator</a></li>
                         <li class="nav-item"><a href="./contacto.php" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@
                         <li><a href="./memoria/memoria.html" class="dropdown-item juegosOffCanvas">MEMORY</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">EMULATOR</a></li>
+                <li class="nav-item"><a href="./emulador/index.php" class="nav-link">EMULATOR</a></li>
                 <li class="nav-item"><a href="./contacto.php" class="nav-link">CONTACT</a></li>
             </ul>
         </div>

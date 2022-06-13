@@ -29,7 +29,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container" id="main_nav">
                     <ul class="nav nav-pills" id="menu-links">
-                        <li class="nav-item"><a href=".../index.php" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="../index.php" class="nav-link" aria-current="page">Home</a></li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 Games
