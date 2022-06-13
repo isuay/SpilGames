@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <a href="./memoria.html"><img src="img/slider/memory.png" alt="Memory game" class="d-block"></a>
+            <a href="./memoria.html"><img src="img/slider/memoria2.png" alt="Memory game" class="d-block"></a>
             <div class="carousel-caption">
                 <h3>MEMORY GAME</h3>
             </div>

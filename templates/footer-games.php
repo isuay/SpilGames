@@ -8,9 +8,9 @@
     <div class="col-sm-4">
         <h5 class="text-upper">Games</h5>
         <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="../uno.html" class="nav-link nav-link-footer p-0 text-muted">Uno</a></li>
+            <li class="nav-item mb-2"><a href="../uno/" class="nav-link nav-link-footer p-0 text-muted">Uno</a></li>
             <li class="nav-item mb-2"><a href="../Solitario/public/index.html" class="nav-link nav-link-footer p-0 text-muted">Solitaire</a></li>
-            <li class="nav-item mb-2"><a href="../memoria.html" class="nav-link nav-link-footer p-0 text-muted">Memory</a></li>
+            <li class="nav-item mb-2"><a href="../memoria/memoria.html" class="nav-link nav-link-footer p-0 text-muted">Memory</a></li>
         </ul>
     </div>
 
@@ -19,7 +19,7 @@
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="../index.php" class="nav-link nav-link-footer p-0 text-muted">Home</a></li>
             <li class="nav-item mb-2"><a href="../aboutUs.html" class="nav-link nav-link-footer p-0 text-muted">About us</a></li>
-            <li class="nav-item mb-2"><a href="../contactUs.html" class="nav-link nav-link-footer p-0 text-muted">Contact us</a></li>
+            <li class="nav-item mb-2"><a href="../contacto.php" class="nav-link nav-link-footer p-0 text-muted">Contact us</a></li>
         </ul>
     </div>
 </footer>
