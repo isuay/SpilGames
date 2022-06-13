@@ -23,7 +23,7 @@
         <img src="images/amarillo.jpeg" alt="Spider Solitaire" class="d-block">
         <div class="carousel-caption">
             <h3>POKEMON AMARILLO</h3>
-            <a href="#juego"><button id="pkmn-Amarillo" class="btn">
+            <a href="#juego"><button id="pkmn-Amarillo" class="btn myButton">
             Jugar
             </button> </a>
         </div>
@@ -52,11 +52,12 @@
 </div>
 </section>
 <section id="juego">
+    <div class="emulator-container d-flex flex-wrap justify-content-center"> 
         <div style="width:640px;height:480px;max-width:100%">
             <div id="gameboycolor"></div>
         </div>
- </section>
-
+    </div>
+ </section >
     <script src="js/loader.js"></script>
     <script src="js/main.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
