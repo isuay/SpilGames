@@ -57,7 +57,7 @@
         </div>
         <div class="offcanvas-body">
             <ul class="nav nav-pills" id="menu-offCanvas">
-                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">HOME</a></li>
+                <li class="nav-item"><a href="../index.php" class="nav-link" aria-current="page">HOME</a></li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         GAMES
