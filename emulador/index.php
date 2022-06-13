@@ -23,21 +23,27 @@
         <img src="images/pokemon.jpeg" alt="Pokemon" class="d-block">
         <div class="carousel-caption">
             <!-- <h3>POKEMON AMARILLO</h3> -->
-            <a href="#juego"><button id="pkmn-Amarillo" class="btn myButton">
+            <button id="pkmn-Amarillo" class="btn myButton">
             Jugar
-            </button> </a>
+            </button>
         </div>
     </div>
     <div class="carousel-item ">
         <img src="images/SuperMarioLand.jpg" alt="Mario" class="d-block">
         <div class="carousel-caption">
             <!-- <h3>SUPER MARIO LAND</h3> -->
+            <button id="super-mario" class="btn myButton">
+            Jugar
+            </button>
         </div>
     </div>
     <div class="carousel-item">
         <img src="images/tetris.jpg" alt="Zelda" class="d-block">
         <div class="carousel-caption">
             <!-- <h3>TETRIS</h3> -->
+            <button id="tetris" class="btn myButton">
+            Jugar
+            </button>
         </div>
     </div>
 </div>

@@ -1,6 +1,8 @@
 
 window.addEventListener('DOMContentLoaded', iniciarApp);
 const pokmnAmarillo = document.querySelector('#pkmn-Amarillo');
+const superMario = document.querySelector('#super-mario');
+const tetris = document.querySelector('#tetris');
 
 function iniciarApp(){
  addListeners();
@@ -17,6 +19,8 @@ function cargarJuego(nombre, url, core){
 function addListeners(){
     window.addEventListener('keydown', disableTec);
     pokmnAmarillo.addEventListener('click', cargarJuego('#gameboycolor', window.location.href + 'roms/PokemonEAmarilla.zip', 'gb'));
+    superMario.addEventListener('click', cargarJuego('#gameboycolor', window.location.href + 'roms/Super_Mario', 'gb'));
+    tetris.addEventListener('click', cargarJuego('#gameboycolor', window.location.href + 'roms/Tetris.zip', 'gb'));
 }
 
 function disableTec(e){
