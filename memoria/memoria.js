@@ -29,9 +29,9 @@ $(document).ready(function () {
 
     // Sonidos juego
     let sonidoGirar = new Audio();
-    sonidoGirar.src = "./sound/card.mp3";
+    sonidoGirar.src = "../sound/card.mp3";
     let sonidoGanar = new Audio();
-    sonidoGanar.src = "./sound/ganar.mp3";
+    sonidoGanar.src = "../sound/ganar.mp3";
 
     // const cont = document.getElementById("contador");
     // console.log(object);
@@ -87,13 +87,13 @@ $(document).ready(function () {
         }
         arrayComparar.push($(this).find("img").attr("src")); // Añade el src de la imagen al array
         arrayEliminar.push($(this).find(".inner-wrap")); // Añade el div con clase inner-wrap al que hemos dado click al array
+        
         checkIgual();
-        mostrarMovimientos();
     }
 
     // Función para comprobar si dos cartas son iguales
     function checkIgual() {
-
+       
         if (arrayComparar.length === 2) {
             // Quita el listener a las cartas para que no le puedas dar click
             $(".carta").off("click", clickCarta);
@@ -106,6 +106,7 @@ $(document).ready(function () {
                     contadorFin += 2;
                 }
                 contadorMov++;
+                mostrarMovimientos();
                 arrayComparar = [];
                 arrayEliminar = [];
                 checkGanar();
@@ -151,6 +152,7 @@ $(document).ready(function () {
             `;
             divMov.appendChild(p);
     }
+
     function limpiarHTML(elemento){
         while(elemento.firstChild){
             elemento.removeChild(elemento.firstChild);
