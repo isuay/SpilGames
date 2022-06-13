@@ -1,3 +1,8 @@
+<!-- AUTORES PÁGINA
+33,33% JOSÉ DAVID ROSALES RIOS
+33,33% BLAYIMIR ALEXIS PÉREZ
+33,33% IRIS SUAY PATRICIO -->
+
 <?php include './templates/header.php';?>
 
 <!-- Slider -->

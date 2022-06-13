@@ -1,3 +1,8 @@
+<!-- AUTORES PÁGINA
+25% JOSÉ DAVID ROSALES RIOS
+25% BLAYIMIR ALEXIS PÉREZ
+50% IRIS SUAY PATRICIO -->
+
 <?php ?>
 <!doctype html>
 <html lang="es">

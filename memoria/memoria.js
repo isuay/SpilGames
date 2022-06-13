@@ -1,3 +1,6 @@
+/* AUTORES PÁGINA
+100% IRIS SUAY PATRICIO */
+
 $(document).ready(function () {
 
     // Lista con las imágenes del juego

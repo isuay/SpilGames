@@ -1,3 +1,5 @@
+/* AUTORES PÁGINA
+100% BLAYIMIR ALEXIS PÉREZ*/
 
 window.addEventListener('DOMContentLoaded', iniciarAPP);
 const nombre = document.querySelector('#name');

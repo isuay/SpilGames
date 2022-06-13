@@ -1,10 +1,13 @@
+/* AUTORES PÁGINA
+100% IRIS SUAY PATRICIO */
+
 *{
     box-sizing: border-box;
 }
 
-/* body {
+body {
     background-color: #1B263B;
-} */
+}
 
 .tablero {
     max-width: 1200px;

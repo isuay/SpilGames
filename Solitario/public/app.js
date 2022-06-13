@@ -1,3 +1,6 @@
+/* AUTORES PÁGINA 
+100% JOSÉ DAVID ROSALES RIOS*/
+
 import { Carta } from "./classes/Carta.js";
 import { Tablero } from "./classes/Tablero.js";
 export class Solitario {
