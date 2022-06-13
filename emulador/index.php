@@ -15,29 +15,29 @@
 <div class="carousel-inner">
     <div class="carousel-item active">
         <img src="images/game_boy.jpg" alt="Bienvenida" class="d-block">
-        <div id="texto-medio" class="carousel-caption">
+        <div class="carousel-caption">
             <h3>JUEGOS DE GAME BOY</h3>
         </div>
     </div>
     <div class="carousel-item">
-        <img src="images/amarillo.jpeg" alt="Spider Solitaire" class="d-block">
+        <img src="images/pokemon.jpeg" alt="Pokemon" class="d-block">
         <div class="carousel-caption">
-            <h3>POKEMON AMARILLO</h3>
+            <!-- <h3>POKEMON AMARILLO</h3> -->
             <a href="#juego"><button id="pkmn-Amarillo" class="btn myButton">
             Jugar
             </button> </a>
         </div>
     </div>
     <div class="carousel-item ">
-        <a href="./uno.html"><img src="img/slider/uno.jpg" alt="Uno" class="d-block"></a>
+        <img src="images/SuperMarioLand.jpg" alt="Mario" class="d-block">
         <div class="carousel-caption">
-            <h3>UNO</h3>
+            <!-- <h3>SUPER MARIO LAND</h3> -->
         </div>
     </div>
     <div class="carousel-item">
-        <a href="./memoria.html"><img src="img/slider/memory.png" alt="Memory game" class="d-block"></a>
+        <img src="images/tetris.jpg" alt="Zelda" class="d-block">
         <div class="carousel-caption">
-            <h3>MEMORY GAME</h3>
+            <!-- <h3>TETRIS</h3> -->
         </div>
     </div>
 </div>
