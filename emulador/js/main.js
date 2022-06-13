@@ -1,3 +1,5 @@
+/* AUTORES PÁGINA 
+100% BLAYIMIR ALEXIS PÉREZ*/
 
 window.addEventListener('DOMContentLoaded', iniciarApp);
 const pokmnAmarillo = document.querySelector('#pkmn-Amarillo');

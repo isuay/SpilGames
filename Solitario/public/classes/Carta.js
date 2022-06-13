@@ -1,3 +1,5 @@
+/* AUTORES PÁGINA 
+100% JOSÉ DAVID ROSALES RIOS*/
 export class Carta {
     constructor(color, numero, palo, esVisible) {
         this.color = color;

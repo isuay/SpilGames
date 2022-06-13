@@ -1,3 +1,5 @@
+/* AUTORES PÁGINA 
+100% JOSÉ DAVID ROSALES RIOS*/
 import { Carta } from "./Carta.js";
 export class Tablero {
     /**
