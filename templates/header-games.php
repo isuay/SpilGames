@@ -72,12 +72,8 @@
                         <li><a href="../memoria.html" class="dropdown-item juegosOffCanvas">MEMORY</a></li>
                     </ul>
                 </li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link">GAMES</a></li>
-                <li class="nav-item"><a href="../solitario.html" class="nav-link juegosOffCanvas">SOLITAIRE</a></li>
-                <li class="nav-item"><a href="../uno.html" class="nav-link juegosOffCanvas"></a></li>
-                <li class="nav-item"><a href="../memoria.html" class="nav-link juegosOffCanvas">MEMORY</a></li> -->
                 <li class="nav-item"><a href="../emulador/" class="nav-link">EMULATOR</a></li>
-                <li class="nav-item"><a href="../contactUs.html" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="../contacto.php" class="nav-link">CONTACT</a></li>
             </ul>
         </div>
     </div>
