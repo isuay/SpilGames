@@ -46,7 +46,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
-                        <li class="nav-item"><a href="./contactUs.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="./contacto.php" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -62,15 +62,15 @@
         </div>
         <div class="offcanvas-body">
             <ul class="nav nav-pills" id="menu-offCanvas">
-                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">HOME</a></li>
+                <li class="nav-item"><a href="./index.php" class="nav-link" aria-current="page">HOME</a></li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         GAMES
                     </a>
                     <ul class="dropdown-menu dropdown-menuOffCanvas">
                         <li><a href="./Solitario/public/index.html" class="dropdown-item juegosOffCanvas">SOLITAIRE</a></li>
-                        <li><a href="./uno.html" class="dropdown-item juegosOffCanvas">UNO</a></li>
-                        <li><a href="./memoria.html" class="dropdown-item juegosOffCanvas">MEMORY</a></li>
+                        <li><a href="./uno/" class="dropdown-item juegosOffCanvas">UNO</a></li>
+                        <li><a href="./memoria/memoria.html" class="dropdown-item juegosOffCanvas">MEMORY</a></li>
                     </ul>
                 </li>
                 <!-- <li class="nav-item"><a href="#" class="nav-link">GAMES</a></li>
@@ -78,7 +78,7 @@
                 <li class="nav-item"><a href="./uno.html" class="nav-link juegosOffCanvas"></a></li>
                 <li class="nav-item"><a href="./memoria.html" class="nav-link juegosOffCanvas">MEMORY</a></li> -->
                 <li class="nav-item"><a href="#" class="nav-link">EMULATOR</a></li>
-                <li class="nav-item"><a href="./contactUs.html" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="./contacto.php" class="nav-link">CONTACT</a></li>
             </ul>
         </div>
     </div>
