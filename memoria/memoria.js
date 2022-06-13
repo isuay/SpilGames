@@ -61,7 +61,7 @@ $(document).ready(function () {
         setTimeout(function () {
             for (var i = 0; i < casillas.length; i++) {
                 var img = document.createElement("img");
-                img.src = "img/memoria/" + array[i];
+                img.src = "img/" + array[i];
                 casillas[i].appendChild(img);
             }
         }, 200);

@@ -1,20 +1,6 @@
-<!doctype html>
-<html lang="es">
+<?php include '../templates/header-games.php';?>
 
-<head>
-    <meta charset="utf-8">
-    <title>Memory Game</title>
-    <meta name="description" content="HTML5, CSS3">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/memoria.css">
-</head>
-
-<body>
-
+<section>
     <div class="tablero d-flex">
         <div class="d-flex flex-wrap">
             <div class="carta">
@@ -137,8 +123,7 @@
         <div id="movimiento-zone"></div>
     </div>
 
-    <script src="js/memoria.js"></script>
+    <script src="memoria.js"></script>
+</section>
 
-</body>
-
-</html>
+<?php include '../templates/footer-games.php'; ?>
