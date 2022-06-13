@@ -41,8 +41,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="./Solitario/public/index.html" class="dropdown-item">Solitaire</a></li>
-                                <li><a href="./uno.html" class="dropdown-item">uno</a></li>
-                                <li><a href="./memoria.html" class="dropdown-item">memory</a></li>
+                                <li><a href="./uno/" class="dropdown-item">uno</a></li>
+                                <li><a href="./memoria/memoria.html" class="dropdown-item">memory</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
