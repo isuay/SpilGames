@@ -8,18 +8,19 @@ const mensaje = document.querySelector('#mensaje');
 const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const btnEnviar = document.querySelector('#btnEnviar');
 
-function iniciarAPP(){
+function iniciarAPP() {
   addEventListeners();
   desactivarBTN(btnEnviar);
 }
 
-function addEventListeners(){
+function addEventListeners() {
   nombre.addEventListener('input', validarFormulario);
   email.addEventListener('input', validarFormulario);
   mensaje.addEventListener('input', validarFormulario);
+  btnEnviar.addEventListener('click', clickBtnEnviar);
 }
 
-function validarFormulario(e){
+function validarFormulario(e) {
   e.preventDefault();
 
   if (e.target.value != '') {
@@ -42,24 +43,32 @@ function validarFormulario(e){
       e.target.classList.add('border-red');
     }
   }
-  
-  if(er.test(email.value) && mensaje.value != '' && nombre.value != ''){
+
+  if (er.test(email.value) && mensaje.value != '' && nombre.value != '') {
     activarBTN(btnEnviar);
   } else {
     desactivarBTN(btnEnviar);
   }
 }
 
-function mostrarError(error){
+function mostrarError(error) {
   console.log(error);
 }
 
-function activarBTN(btn){
+function activarBTN(btn) {
   btn.disabled = false;
-  btn.classList.remove('no-cursor' , 'op50');
+  btn.classList.remove('no-cursor', 'op50');
 }
 
-function desactivarBTN(btn){
+function desactivarBTN(btn) {
   btn.disabled = true;
-  btn.classList.add('no-cursor' , 'op50');
+  btn.classList.add('no-cursor', 'op50');
+}
+
+function clickBtnEnviar() {
+  let spinner = document.createElement('span');
+  spinner.innerHTML =`
+    <div class="spinner-border text-danger"></div>
+  `;
+  btnEnviar.appendChild(spinner);
 }

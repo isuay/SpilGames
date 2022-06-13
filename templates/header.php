@@ -13,7 +13,8 @@
     <meta name="description" content="HTML5, CSS3">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -46,7 +47,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
-                        <li class="nav-item"><a href="./contactUs.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="./contacto.php" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -62,23 +63,19 @@
         </div>
         <div class="offcanvas-body">
             <ul class="nav nav-pills" id="menu-offCanvas">
-                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">HOME</a></li>
+                <li class="nav-item"><a href="./index.php" class="nav-link" aria-current="page">HOME</a></li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         GAMES
                     </a>
                     <ul class="dropdown-menu dropdown-menuOffCanvas">
                         <li><a href="./Solitario/public/index.html" class="dropdown-item juegosOffCanvas">SOLITAIRE</a></li>
-                        <li><a href="./uno.html" class="dropdown-item juegosOffCanvas">UNO</a></li>
-                        <li><a href="./memoria.html" class="dropdown-item juegosOffCanvas">MEMORY</a></li>
+                        <li><a href="./uno/" class="dropdown-item juegosOffCanvas">UNO</a></li>
+                        <li><a href="./memoria/memoria.html" class="dropdown-item juegosOffCanvas">MEMORY</a></li>
                     </ul>
                 </li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link">GAMES</a></li>
-                <li class="nav-item"><a href="./solitario.html" class="nav-link juegosOffCanvas">SOLITAIRE</a></li>
-                <li class="nav-item"><a href="./uno.html" class="nav-link juegosOffCanvas"></a></li>
-                <li class="nav-item"><a href="./memoria.html" class="nav-link juegosOffCanvas">MEMORY</a></li> -->
                 <li class="nav-item"><a href="#" class="nav-link">EMULATOR</a></li>
-                <li class="nav-item"><a href="./contactUs.html" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="./contacto.php" class="nav-link">CONTACT</a></li>
             </ul>
         </div>
     </div>

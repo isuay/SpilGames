@@ -18,11 +18,17 @@
   flex-direction: row;
 } */
 
-#logo-web{
+#logo-web {
     width: 65% !important;
+    border: none;
 }
-#f1 img{
+
+#f1 img {
     width: 60% !important;
+}
+
+#logo-offCanvas {
+    width: 50% !important;
 }
 
 #mazos {
@@ -48,19 +54,20 @@
     background-color: white;
     background-image: url('./img/CORAZON.PNG');
     background-size: contain;
-    
+
 }
 
 #almacenPicas {
-    background:white;
+    background: white;
     background-image: url('./img/PICA.PNG');
     background-size: contain;
 }
 
 #almacenDiamantes {
-    background:white;
+    background: white;
     background-image: url('./img/DIAMANTE.PNG');
-    background-size: contain;;
+    background-size: contain;
+    ;
 }
 
 
@@ -79,9 +86,11 @@ img {
 ul {
     list-style: none;
 }
-.list-group-horizontal{
+
+.list-group-horizontal {
     justify-content: center !important;
 }
+
 .list-group-item {
     background-color: transparent !important;
 }
@@ -100,21 +109,24 @@ ul {
     grid-row-start: 1;
     grid-column-start: 1;
 }
-.columnasHTML{
+
+.columnasHTML {
     min-width: 5vw;
     min-height: 15vh;
-    border:1px solid white;
+    border: 1px solid white;
     border-radius: 2px;
     padding: 0;
 }
+
 .columnasHTML .carta+.carta {
     margin-top: -13vh;
 }
 
 
-#mazoEntrada{
+#mazoEntrada {
     margin-left: 2vw;
 }
+
 #mazoRobo {
     border: 1px solid black;
     height: 20vh;
@@ -122,83 +134,91 @@ ul {
     padding: 2px;
     margin-left: 2vw;
 }
-#mazoRobo .carta:not(:last-child){
+
+#mazoRobo .carta:not(:last-child) {
     pointer-events: none;
 }
 
 
 
 
-#mazoRobo > .carta + .carta{
-    margin-top: -13vh!important;
-}
-#mazoEntrada > .carta + .carta{
-    margin-top: -15.5vh!important;
+#mazoRobo>.carta+.carta {
+    margin-top: -14vh !important;
 }
 
-.depositos{
+#mazoEntrada>.carta+.carta {
+    margin-top: -16.2vh !important;
+}
+
+.depositos {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
 }
 
-.deposito{
+.deposito {
     position: relative;
-    width:5vw;
+    width: 5vw;
     height: 15vh;
     display: inline-block;
-    
+
 }
-.deposito > .carta + .carta{
+
+.deposito>.carta+.carta {
     margin-top: -15.5vh;
 }
-.deposito > * {
+
+.deposito>* {
     pointer-events: none;
 }
 
-#reiniciar{
+#reiniciar {
     cursor: pointer;
     border-radius: 50%;
     background-color: black;
     padding: 2.5vw;
     position: absolute;
-    bottom:2rem;
+    bottom: 2rem;
     right: 2rem;
-    color:white;
+    color: white;
     font-size: 32px;
 }
 
 
-@media (max-width: 1200px) {
-    #cuerpoTablero{
+@media screen and (max-width: 1200px) {
+    #cuerpoTablero {
         padding: 0;
     }
-    img{
-        height: 17.5vh;
-        width: 7.5vw;
+
+    img {
+        height: 13vh;
+        width: 6vw !important;
     }
 
-    #mazoRobo > .carta + .carta{
-        margin-top: -15vh!important;
+    #mazoRobo>.carta+.carta {
+        margin-top: -13.5vh !important;
     }
-    #mazoEntrada > .carta + .carta{
-        margin-top: -17.5vh!important;
-    }
-  }
 
-  @media (max-width: 800px) {
-    #cuerpoTablero{
+    #mazoEntrada>.carta+.carta {
+        margin-top: -14.2vh !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #cuerpoTablero {
         padding: 0;
-    }   
-    img{
+    }
+
+    img {
         height: 13.5vh;
         width: 9vw;
     }
 
-    #mazoRobo > .carta + .carta{
-        margin-top: -15vh!important;
+    #mazoRobo>.carta+.carta {
+        margin-top: -14vh !important;
     }
-    #mazoEntrada > .carta + .carta{
-        margin-top: -16.5vh!important;
+
+    #mazoEntrada>.carta+.carta {
+        margin-top: -14.7vh !important;
     }
-  }
+}

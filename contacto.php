@@ -16,7 +16,7 @@
                             <label for="email">Email</label>
                         </div>
                         <p>Elige una opción</p>
-                        <select name="option" id="option">
+                        <select name="option" id="option" class="form-select">
                             <option value="Error">Error</option>
                             <option value="Error">Mejora</option>
                             <option value="Error" selected>Comentario</option>
@@ -25,7 +25,8 @@
                             <textarea name="mensaje" id="mensaje" cols="90" rows="5" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="p-t-30">
-                            <input type="submit" value="Enviar" class="btn btn-dark" id="btnEnviar">
+                            <button type="submit" class="btn btn-dark" id="btnEnviar">Enviar</button>
+                            <!-- <input type="submit" value="Enviar" class="btn btn-dark" id="btnEnviar"> -->
                         </div>
                     </form>
                 </div>

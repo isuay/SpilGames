@@ -307,10 +307,12 @@ p {
 }
 
 select {
-  padding: 10px;
+  /* padding: 10px;
   border: 1px solid #d5d5d5 !important;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #fff; */
+  height: 4rem;
+  font-size: 14px !important;
 }
 
 /* ==========================================================================
@@ -380,4 +382,12 @@ select {
   textarea {
     max-width: 100%;
   }
+}
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+
+.btn {
+  width: 100%;
 }

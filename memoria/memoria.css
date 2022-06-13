@@ -67,7 +67,7 @@ body {
 p {
     text-align: center;
     color: #E0E1DD;
-    font-size: 50px;
+    font-size: 4rem !important;
     margin: 0;
 }
 
