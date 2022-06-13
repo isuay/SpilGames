@@ -391,3 +391,12 @@ select {
 .btn {
   width: 100%;
 }
+
+#email {
+  height: 5rem;
+  font-size: 14px;
+}
+
+.input-group-text{
+  font-size: 14px;
+}

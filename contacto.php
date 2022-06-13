@@ -11,9 +11,9 @@
                             <input type="text" class="form-control" name="name" placeholder="Enter name" id="name">
                             <label for="name">Name</label>
                         </div>
-                        <div class="form-floating mb-3 mt-3">
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                            <label for="email">Email</label>
+                        <div class="input-group mb-3 mt-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                            <span class="input-group-text">@example.com</span>
                         </div>
                         <p>Elige una opción</p>
                         <select name="option" id="option" class="form-select">
@@ -26,7 +26,6 @@
                         </div>
                         <div class="p-t-30">
                             <button type="submit" class="btn btn-dark" id="btnEnviar">Enviar</button>
-                            <!-- <input type="submit" value="Enviar" class="btn btn-dark" id="btnEnviar"> -->
                         </div>
                     </form>
                 </div>
