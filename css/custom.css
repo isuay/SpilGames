@@ -231,6 +231,7 @@ h4 {
 }
 
 h5 {
+    margin-bottom: 1rem !important;
     font-family: var(--fuentePrincipal) !important;
     color: var(--colorTerciario) !important;
 }
@@ -256,6 +257,11 @@ p {
 }
 
 /* About Us */
+.card {
+    align-items: center;
+    border: 0;
+}
+
 .fondo-aboutUs {
     background-color: var(--colorTerciario);
 }
