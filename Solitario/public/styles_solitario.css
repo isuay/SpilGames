@@ -1,0 +1,224 @@
+/*AUTORES PÁGINA
+100% JOSÉ DAVID ROSALES RIOS*/
+
+#tablero-1 {
+    background-image: url('./img/green-velvet.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    padding: 5rem 0;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* 
+#tablero {
+  display: flex;
+  flex-direction: row;
+} */
+
+#logo-web {
+    width: 65% !important;
+    border: none;
+}
+
+#f1 img {
+    width: 60% !important;
+}
+
+#logo-offCanvas {
+    width: 50% !important;
+}
+
+#mazos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    padding: 2px;
+}
+
+#mazo_Entrada {
+    border: 1px solid black;
+    list-style: none;
+    padding: 2px;
+}
+
+#almacenTrebol {
+    background-image: url('./img/TREBOL.PNG');
+    background-size: contain;
+    /**background-color: gray !important;**/
+}
+
+#almacenCorazones {
+    background-color: white;
+    background-image: url('./img/CORAZON.PNG');
+    background-size: contain;
+
+}
+
+#almacenPicas {
+    background: white;
+    background-image: url('./img/PICA.PNG');
+    background-size: contain;
+}
+
+#almacenDiamantes {
+    background: white;
+    background-image: url('./img/DIAMANTE.PNG');
+    background-size: contain;
+    ;
+}
+
+
+
+#listElementDown {
+    height: 6rem;
+    width: auto;
+}
+
+img {
+    border: 2px solid black;
+    height: 15vh;
+    width: 5vw !important;
+}
+
+ul {
+    list-style: none;
+}
+
+.list-group-horizontal {
+    justify-content: center !important;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+}
+
+.contenedorColumnas {
+    display: flex;
+}
+
+.columDisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.columDisplay li {
+    /* padding: 50px; */
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.columnasHTML {
+    min-width: 5vw;
+    min-height: 15vh;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 0;
+}
+
+.columnasHTML .carta+.carta {
+    margin-top: -13vh;
+}
+
+
+#mazoEntrada {
+    margin-left: 2vw;
+}
+
+#mazoRobo {
+    border: 1px solid black;
+    height: 20vh;
+    list-style: none;
+    padding: 2px;
+    margin-left: 2vw;
+}
+
+#mazoRobo .carta:not(:last-child) {
+    pointer-events: none;
+}
+
+
+
+
+#mazoRobo>.carta+.carta {
+    margin-top: -14vh !important;
+}
+
+#mazoEntrada>.carta+.carta {
+    margin-top: -16.2vh !important;
+}
+
+.depositos {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.deposito {
+    position: relative;
+    width: 5vw;
+    height: 15vh;
+    display: inline-block;
+
+}
+
+.deposito>.carta+.carta {
+    margin-top: -15.5vh;
+}
+
+.deposito>* {
+    pointer-events: none;
+}
+
+#reiniciar {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    padding: 2.5vw;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    color: white;
+    font-size: 32px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #cuerpoTablero {
+        padding: 0;
+    }
+
+    img {
+        height: 13vh;
+        width: 6vw !important;
+    }
+
+    #mazoRobo>.carta+.carta {
+        margin-top: -13.5vh !important;
+    }
+
+    #mazoEntrada>.carta+.carta {
+        margin-top: -14.2vh !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #cuerpoTablero {
+        padding: 0;
+    }
+
+    img {
+        height: 13.5vh;
+        width: 9vw;
+    }
+
+    #mazoRobo>.carta+.carta {
+        margin-top: -14vh !important;
+    }
+
+    #mazoEntrada>.carta+.carta {
+        margin-top: -14.7vh !important;
+    }
+}

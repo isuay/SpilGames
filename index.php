@@ -1,3 +1,8 @@
+<!-- AUTORES PÁGINA
+33,33% JOSÉ DAVID ROSALES RIOS
+33,33% BLAYIMIR ALEXIS PÉREZ
+33,33% IRIS SUAY PATRICIO -->
+
 <?php include './templates/header.php';?>
 
 <!-- Slider -->
@@ -20,19 +25,19 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/slider/Solitario2.jpg" alt="Spider Solitaire" class="d-block">
+            <a href="./Solitario/public/index.html"><img src="img/slider/solitaire.jpg" alt="Spider Solitaire" class="d-block"></a>
             <div class="carousel-caption">
-                <h3>SPIDER SOLITAIRE</h3>
+                <h3>SOLITAIRE</h3>
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="img/slider/uno2.jpg" alt="Uno" class="d-block">
+            <a href="./uno.html"><img src="img/slider/uno.jpg" alt="Uno" class="d-block"></a>
             <div class="carousel-caption">
                 <h3>UNO</h3>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/slider/memory.png" alt="Memory game" class="d-block">
+            <a href="./memoria.html"><img src="img/slider/memoria2.png" alt="Memory game" class="d-block"></a>
             <div class="carousel-caption">
                 <h3>MEMORY GAME</h3>
             </div>
