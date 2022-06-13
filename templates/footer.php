@@ -13,9 +13,9 @@
     <div class="col-sm-4">
         <h5 class="text-upper">Games</h5>
         <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="./uno.html" class="nav-link nav-link-footer p-0 text-muted">Uno</a></li>
+            <li class="nav-item mb-2"><a href="./uno/" class="nav-link nav-link-footer p-0 text-muted">Uno</a></li>
             <li class="nav-item mb-2"><a href="./Solitario/public/index.html" class="nav-link nav-link-footer p-0 text-muted">Solitaire</a></li>
-            <li class="nav-item mb-2"><a href="./memoria.html" class="nav-link nav-link-footer p-0 text-muted">Memory</a></li>
+            <li class="nav-item mb-2"><a href="./memoria/memoria.html" class="nav-link nav-link-footer p-0 text-muted">Memory</a></li>
         </ul>
     </div>
 
