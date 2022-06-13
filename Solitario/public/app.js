@@ -186,6 +186,7 @@ export class Solitario {
      * Funcion para poder almacenar cartas en los almacenes
      */
     dropAlmacen(ev) {
+        ev.preventDefault();
         console.log('FUNCIÓN DROP ALMACEN');
         const almacenDestino = this.html;
         var dataCartaMandada = ev.dataTransfer.getData("text");
@@ -271,8 +272,7 @@ export class Solitario {
     }
 
     reiniciaPartida(){
-        this.app.solitario = new Solitario();
-        alert('Partida reiniciada... buena suerte')
+        location.reload();
     }
 }
 const solitario = new Solitario();
