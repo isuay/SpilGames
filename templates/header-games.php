@@ -36,12 +36,12 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="../Solitario/public/index.html" class="dropdown-item">Solitaire</a></li>
-                                <li><a href="../uno.html" class="dropdown-item">uno</a></li>
-                                <li><a href="../memoria.html" class="dropdown-item">memory</a></li>
+                                <li><a href="../uno/" class="dropdown-item">uno</a></li>
+                                <li><a href="../memoria/memoria.html" class="dropdown-item">memory</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Emulator</a></li>
-                        <li class="nav-item"><a href="../contactUs.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="../emulador/" class="nav-link">Emulator</a></li>
+                        <li class="nav-item"><a href="../contacto.php" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -72,7 +72,7 @@
                 <li class="nav-item"><a href="../solitario.html" class="nav-link juegosOffCanvas">SOLITAIRE</a></li>
                 <li class="nav-item"><a href="../uno.html" class="nav-link juegosOffCanvas"></a></li>
                 <li class="nav-item"><a href="../memoria.html" class="nav-link juegosOffCanvas">MEMORY</a></li> -->
-                <li class="nav-item"><a href="#" class="nav-link">EMULATOR</a></li>
+                <li class="nav-item"><a href="../emulador/" class="nav-link">EMULATOR</a></li>
                 <li class="nav-item"><a href="../contactUs.html" class="nav-link">CONTACT</a></li>
             </ul>
         </div>
